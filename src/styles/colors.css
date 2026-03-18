@@ -1,0 +1,16 @@
+:root {
+  --color-brand-primary: #31110F;
+  --color-brand-secondary: #F7F4EB;
+
+  --color-bg-gray: #F7F7F7;
+  --color-bg-warm: #F7F4EB;
+  --color-bg-warm2: #FFFDF6;
+
+  --color-text-white: #FFFFFF;
+  --color-text-dark: #000000;
+
+  --color-button-primary: #31110F;
+  --color-button-primary-hover: "";
+  --color-button-secondary: "";
+  --color-button-secondary_hover: "";
+}
