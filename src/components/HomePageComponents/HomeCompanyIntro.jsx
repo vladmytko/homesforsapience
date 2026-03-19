@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../ReusableComponents/Button";
 
 const HomeCompanyIntro = () => {
   return (
@@ -8,7 +8,7 @@ const HomeCompanyIntro = () => {
       className="w-full bg-(--color-bg-warm) overflow-hidden"
     >
       <div className="max-w-6xl mx-auto py-12 sm:py-16 px-6 lg:px-8">
-        <h2 className="text-(--color-text-dark)text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
+        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
           Homes for sapience - property investment and consultancy
         </h2>
 
@@ -30,7 +30,8 @@ const HomeCompanyIntro = () => {
         </div>
         <div className="mt-10">
           <Button
-            title="Shedule a Consult" 
+            title="Shedule a Consult"
+            link={'/about'} 
           />
         </div>
       </div>
