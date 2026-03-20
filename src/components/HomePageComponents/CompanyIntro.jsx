@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../ReusableComponents/Button";
 
-const HomeCompanyIntro = () => {
+const CompanyIntro = () => {
   return (
     <section
       id="CompanyIntro"
@@ -39,4 +39,4 @@ const HomeCompanyIntro = () => {
   );
 };
 
-export default HomeCompanyIntro;
+export default CompanyIntro;

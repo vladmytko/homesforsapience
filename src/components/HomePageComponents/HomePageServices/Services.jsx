@@ -2,7 +2,7 @@ import React from "react";
 import { ServicesItems } from "./ServicesItems";
 import Button from "../../ReusableComponents/Button";
 
-const HomePageServices = () => {
+const Services = () => {
   return (
     <section
       id="Services"
@@ -52,4 +52,4 @@ const HomePageServices = () => {
   );
 };
 
-export default HomePageServices;
+export default Services;

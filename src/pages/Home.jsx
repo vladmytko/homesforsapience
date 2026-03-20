@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
-import Navbar from '../components/Navbar'
-import HomeCompanyIntro from '../components/HomePageComponents/HomeCompanyIntro'
-import HomePageServices from '../components/HomePageComponents/HomePageServices/HomePageServices'
+import Header from '../components/ReusableComponents/Header'
+import Navbar from '../components/ReusableComponents/Navbar'
+import CompanyIntro from '../components/HomePageComponents/CompanyIntro'
+import Services from '../components/HomePageComponents/HomePageServices/Services'
 import { assets_manager } from '../assets/assets_manager'
+import About from '../components/HomePageComponents/About'
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
         showConsultationButton={true}
         showAboutButton={true}
       />
-      <HomeCompanyIntro />
-      <HomePageServices />
+      <CompanyIntro />
+      <Services />
+      <About />
     </>
   )
 }
