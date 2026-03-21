@@ -7,7 +7,7 @@ const CompanyIntro = () => {
       id="CompanyIntro"
       className="w-full bg-(--color-bg-warm) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 sm:py-16 px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
           Homes for sapience - property investment and consultancy
         </h2>

@@ -47,7 +47,7 @@ export const Navbar = () => {
 
   const baseLinkStyle = {
     textDecoration: 'none',
-    color: '#111111',
+    color: '#F7F4EB',
     fontSize: '15px',
     fontWeight: 500,
     transition: 'opacity 0.2s ease',
@@ -60,8 +60,7 @@ export const Navbar = () => {
           position: 'sticky',
           top: 0,
           zIndex: 1000,
-          backgroundColor: '#ffffff',
-          borderBottom: '1px solid #eaeaea',
+          backgroundColor: '#31110F',
         }}
       >
         <div
@@ -79,7 +78,7 @@ export const Navbar = () => {
               to='/'
               style={{
                 textDecoration: 'none',
-                color: '#111111',
+                color: '#F7F4EB',
                 fontSize: '24px',
                 fontWeight: 700,
                 letterSpacing: '-0.03em',
@@ -119,8 +118,8 @@ export const Navbar = () => {
               onClick={() => setShowMobileMenu(true)}
               style={{
                 border: 'none',
-                background: '#111111',
-                color: '#ffffff',
+                background: '#F7F4EB',
+                color: '#000000',
                 width: '48px',
                 height: '48px',
                 borderRadius: '999px',
@@ -157,7 +156,7 @@ export const Navbar = () => {
               right: 0,
               width: 'min(82vw, 360px)',
               height: '100vh',
-              backgroundColor: '#ffffff',
+              backgroundColor: '#F7F4EB',
               zIndex: 1002,
               padding: '24px',
               boxSizing: 'border-box',
@@ -176,15 +175,7 @@ export const Navbar = () => {
                   marginBottom: '32px',
                 }}
               >
-                <span
-                  style={{
-                    fontSize: '20px',
-                    fontWeight: 700,
-                    color: '#111111',
-                  }}
-                >
-                  Menu
-                </span>
+                
 
                 <button
                   type='button'
@@ -200,6 +191,7 @@ export const Navbar = () => {
                     cursor: 'pointer',
                     fontSize: '22px',
                     lineHeight: 1,
+                    marginLeft: 250
                   }}
                 >
                   ×
@@ -236,7 +228,7 @@ export const Navbar = () => {
               onClick={closeMobileMenu}
               style={{
                 textDecoration: 'none',
-                backgroundColor: '#111111',
+                backgroundColor: '#31110F',
                 color: '#ffffff',
                 textAlign: 'center',
                 padding: '16px 20px',

@@ -8,18 +8,18 @@ const Services = () => {
       id="Services"
       className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 sm:py-6 px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10 ">
           Property Investment Guidance
         </h2>
 
-        <div className="container mx-auto px-1">
-          <div className="grid sm:gap-12 md:grid-cols-2 xl:grid-cols-3">
+        <div className="container mx-auto px-1 sm:py-10">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3">
             {ServicesItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-(--color-bg-warm) flex flex-col h-full min-h-125 min-w-80 rounded-3xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]
-                            md:last:col-span-2 md:last:justify-self-center md:last:max-w-100
+                className="bg-(--color-bg-warm) flex flex-col max-h-120 sm:min-h-125 max-w-80 justify-self-center mb-5 rounded-3xl drop-shadow-[0_8px_15px_rgba(0,0,0,0.15)]
+                            md:last:col-span-2 md:last:justify-self-center
                             xl:last:col-span-1 xl:last:justify-self-auto"
               >
                 <div className="p-6 flex flex-col flex-1 ">
@@ -32,7 +32,7 @@ const Services = () => {
                       : String(item.description).split(".").filter(Boolean)
                     ).map((line, index) => (
                       <p key={index} className="text-base leading-relaxed">
-                        {line.trim()}.
+                        {line.trim()}
                       </p>
                     ))}
                   </div>

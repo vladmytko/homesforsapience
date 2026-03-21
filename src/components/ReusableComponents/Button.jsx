@@ -7,7 +7,7 @@ const Button = ({
   link
 }) => {
   return (
-    <Link to={link} className='bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:opacity-90 transition'>
+    <Link to={link} className='bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300'>
       {title}
     </Link>
   )

@@ -5,6 +5,9 @@ import CompanyIntro from '../components/HomePageComponents/CompanyIntro'
 import Services from '../components/HomePageComponents/HomePageServices/Services'
 import { assets_manager } from '../assets/assets_manager'
 import About from '../components/HomePageComponents/About'
+import CaseStudies from '../components/HomePageComponents/HomePageCaseStudies/CaseStudies'
+import ContactForm from '../components/ReusableComponents/ContactForm'
+
 
 const Home = () => {
   return (
@@ -19,6 +22,8 @@ const Home = () => {
       <CompanyIntro />
       <Services />
       <About />
+      <CaseStudies />
+      <ContactForm />
     </>
   )
 }
