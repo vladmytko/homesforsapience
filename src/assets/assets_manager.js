@@ -1,9 +1,11 @@
-import logo from './logo.jpeg'
+import logo from './logo.png'
 import home_hero from './main_hero_test.jpeg'
 import home_founder from './home_founder.webp'
 import mosspark_grid from './mosspark_grid.webp'
 import dyke_grid from './dyke_grid.jpeg'
 import drybridge_grid from './drybridge_grid.jpeg'
+import testimonial1 from './testimonial1.webp'
+import testimonial2 from './testimonial2.jpg'
 
 
 export const assets_manager = {
@@ -12,5 +14,7 @@ export const assets_manager = {
     home_founder,
     drybridge_grid,
     dyke_grid,
-    mosspark_grid
+    mosspark_grid,
+    testimonial1,
+    testimonial2
 }

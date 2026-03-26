@@ -7,6 +7,9 @@ import { assets_manager } from '../assets/assets_manager'
 import About from '../components/HomePageComponents/About'
 import CaseStudies from '../components/HomePageComponents/HomePageCaseStudies/CaseStudies'
 import ContactForm from '../components/ReusableComponents/ContactForm'
+import TestimonialSection from '../components/HomePageComponents/HomeTestimonials/TestimonialSection'
+import Footer from '../components/ReusableComponents/Footer'
+
 
 
 const Home = () => {
@@ -23,7 +26,10 @@ const Home = () => {
       <Services />
       <About />
       <CaseStudies />
+      <TestimonialSection />
       <ContactForm />
+      <Footer />
+
     </>
   )
 }

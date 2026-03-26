@@ -23,7 +23,7 @@ const CaseStudies = () => {
                             xl:last:col-span-1 xl:last:justify-self-auto"
               >
                 {/* image + optional badge */}
-                <div className="relative rounded-xl h-[30vh] overflow-hidden object-cover ">
+                <div className="relative rounded-xl h-[40vh] overflow-hidden object-cover ">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -50,11 +50,8 @@ const CaseStudies = () => {
           </div>
         </div>
         <div className="mt-11 pb-4 items-center text-center">
-                    <Button 
-                    title="Explore Case Studies"
-                    link="/projects" 
-                  />
-                  </div>
+          <Button title="Explore Case Studies" link="/projects" />
+        </div>
       </div>
     </section>
   );

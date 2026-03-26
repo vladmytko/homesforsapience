@@ -51,7 +51,7 @@ const ContactForm = () => {
       id="Contact"
       className="w-full bg-(--color-bg-gray) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto py-12 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium">
           Any Questions? 
         </h2>
@@ -102,7 +102,7 @@ const ContactForm = () => {
               <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="bg-white rounded-2xl p-3 sm:p-6 space-y-4"
+                className="bg-(--color-bg-gray) rounded-2xl p-3 sm:p-6 space-y-4"
               >
                 {/* NAME INPUT */}
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
