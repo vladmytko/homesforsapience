@@ -4,8 +4,7 @@ import home_founder from './home_founder.webp'
 import mosspark_grid from './mosspark_grid.webp'
 import dyke_grid from './dyke_grid.jpeg'
 import drybridge_grid from './drybridge_grid.jpeg'
-import testimonial1 from './testimonial1.webp'
-import testimonial2 from './testimonial2.jpg'
+import tick from './tick.png'
 
 
 export const assets_manager = {
@@ -15,6 +14,6 @@ export const assets_manager = {
     drybridge_grid,
     dyke_grid,
     mosspark_grid,
-    testimonial1,
-    testimonial2
+    tick
+
 }

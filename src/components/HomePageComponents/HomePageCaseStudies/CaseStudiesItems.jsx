@@ -6,7 +6,8 @@ export const CaseStudiesItems = [
     title: "Drybridge Road",
     link: "/project/drybridge",
     image: assets_manager.drybridge_grid,
-    description: [" Purchase: £110k", "Renovation: £32k", "Final Value: £190k"],
+    intro: "4-bedroom detached house",
+    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
   },
 
   {
@@ -14,7 +15,8 @@ export const CaseStudiesItems = [
     title: "Dyke Road",
     link: "/project/hardridge",
     image: assets_manager.dyke_grid,
-    description: [" Purchase: £110k", "Renovation: £32k", "Final Value: £190k"],
+    intro: "3-bedroom renovation project",
+    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
   },
   
   {
@@ -22,6 +24,7 @@ export const CaseStudiesItems = [
     title: "Mosspark Road",
     link: "/project/mosspark",
     image: assets_manager.mosspark_grid,
-    description: [" Purchase: £110k", "Renovation: £32k", "Final Value: £190k"],
+    intro: "2-bedroom buy-to-let",
+    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
   },
 ];

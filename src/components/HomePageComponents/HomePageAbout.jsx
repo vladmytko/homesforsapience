@@ -58,7 +58,7 @@ const AnimatedNumber = ({ value, suffix = "", duration = 1800, start, delay = 0 
   );
 };
 
-const About = () => {
+const HomePageAbout = () => {
 
   const statsRef = useRef(null);
   const [startCounting, setStartCounting] = useState(false);
@@ -170,4 +170,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default HomePageAbout;
