@@ -89,8 +89,8 @@ const HomePageAbout = () => {
     >
       {/** px = horizontal (left + right) */}
       {/** py = vertical (top + bottom) */}
-      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-6 lg:px-0">
-        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
+      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
+        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10">
           Founder
         </h2>
 
@@ -109,7 +109,7 @@ const HomePageAbout = () => {
           {/* RIGHT SIDE - Text */}
 
           <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col">
-            <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl font-medium mb-10">
+            <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
               Timur Khismatullin
             </h2>
 
@@ -151,7 +151,7 @@ const HomePageAbout = () => {
               }`}
               style={{ transitionDelay: `${index * 140}ms` }}
             >
-              <span className="text-3xl sm:text-6xl font-light text-(--color-text-dark)">
+              <span className="text-3xl sm:text-5xl font-normal text-(--color-brand-primary)">
                 <AnimatedNumber
                   value={stat.value}
                   suffix={stat.suffix}

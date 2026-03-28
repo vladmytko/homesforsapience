@@ -19,13 +19,13 @@ export const ServicesItems = [
     ],
   },
 
-  {
-    id: 3,
-    title: "Learning",
-    link: "/services/learning",
-    description: [
-      "Learning is one of the most powerful investments you can make.",
-      "Explore education content designed to help you better understand the UK property market, investment strategies and real-life deal analysis.",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Learning",
+  //   link: "/services/learning",
+  //   description: [
+  //     "Learning is one of the most powerful investments you can make.",
+  //     "Explore education content designed to help you better understand the UK property market, investment strategies and real-life deal analysis.",
+  //   ],
+  // },
 ];

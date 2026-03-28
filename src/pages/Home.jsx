@@ -23,9 +23,10 @@ const Home = () => {
         showAboutButton={true}
       />
       <CompanyIntro />
-      <Services />
       <HomePageAbout />
       <CaseStudies />
+      <Services />
+      
       <TestimonialSection />
       <ContactForm />
       <Footer />
