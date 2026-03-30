@@ -8,7 +8,7 @@ const CaseStudies = () => {
       id="CaseStudiesIntro"
       className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-6">
+      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-6">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl  mb-10 ">
           Case Studies
         </h2>
@@ -18,27 +18,47 @@ const CaseStudies = () => {
             {CaseStudiesItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-(--color-brand-secondary) flex flex-col max-h-110 sm:min-h-110 max-w-90 rounded-3xl justify-self-center drop-shadow-[0_8px_15px_rgba(0,0,0,0.15)]
-                            md:last:col-span-2 md:last:justify-self-center md:last:max-w-90
-                            xl:last:col-span-1 xl:last:justify-self-auto"
+                className="group bg-transparent flex flex-col h-100 max-w-90 rounded-3xl justify-self-center transform-gpu transition duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
               >
                 {/* image + optional badge */}
-                <div className="relative h-[40vh] overflow-hidden object-cover p-3">
+                <div className="relative w-full h-100 rounded-3xl overflow-hidden shadow-lg transition duration-500 ease-out group-hover:shadow-2xl">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-70 object-cover rounded-xl"
+                    className="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-110"
                   />
+
+                  {/* gradient overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent transition duration-500 ease-out group-hover:from-black/95 group-hover:via-black/45"></div>
+                  <div className="absolute inset-0 bg-white/0 transition duration-500 ease-out group-hover:bg-white/5"></div>
+
+                  {/* content */}
+                  <div className="absolute bottom-0 p-5 text-white flex flex-col gap-3 transition duration-500 ease-out group-hover:-translate-y-2">
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+
+                    <p className="text-sm text-gray-200">
+                      Cozy wooden chalet nestled in the Swiss Alps, offering a warm fireplace and scenic views.
+                    </p>
+
+                    <div className="flex gap-2 text-xs">
+                      <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
+                        Semi-detached
+                      </span>
+                      <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
+                        4 Bedroom
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-xl px-5 flex flex-row justify-between">
+                {/* <div className="text-xl px-5 flex flex-row justify-between">
                   <p className="">{item.title}</p>
 
                   <p className="">£150,000</p>
-                </div>
+                </div> */}
 
           
 
-                <div className="px-3 mb-2">
+                {/* <div className="px-3 mb-2">
                   <div className="flex gap-2 px-2 text-center bg-(--color-bg-warm2) rounded-2xl mt-4">
                     {(Array.isArray(item.description)
                       ? item.description
@@ -49,7 +69,7 @@ const CaseStudies = () => {
                       </p>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

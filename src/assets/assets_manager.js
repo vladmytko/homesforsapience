@@ -5,6 +5,7 @@ import mosspark_grid from './mosspark_grid.webp'
 import dyke_grid from './dyke_grid.jpeg'
 import drybridge_grid from './drybridge_grid.jpeg'
 import tick from './tick.png'
+import services from './services.jpg'
 
 
 export const assets_manager = {
@@ -14,6 +15,7 @@ export const assets_manager = {
     drybridge_grid,
     dyke_grid,
     mosspark_grid,
-    tick
+    tick,
+    services
 
 }

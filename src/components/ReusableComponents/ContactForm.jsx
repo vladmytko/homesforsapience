@@ -51,8 +51,8 @@ const ContactForm = () => {
       id="Contact"
       className="w-full bg-(--color-bg-gray) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 px-6 lg:px-8">
-        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium">
+      <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
+        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl">
           Any Questions? 
         </h2>
       
@@ -65,7 +65,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row gap-10 mx-auto max-w-xl lg:max-w-none lg:w-full ">
           {/* LEFT TEXT */}
           <div className="flex flex-col text-left text-black mt-28">
-            <div className="font-light sm:text-xl mb-2">
+            <div className="text-xl mb-2 text-gray-700 leading-relaxed">
 
               <p className="mb-2">Fill out the application and we will contact you in a way convenient for you.</p>
 
@@ -80,7 +80,7 @@ const ContactForm = () => {
           {/* RIGHT FORM */}
 
           {/* Successful message */}
-          <div className="lg:w-1/2 min-h-[200px] sm:min-h-[520px] flex items-center">
+          <div className="lg:w-1/2 min-h-50 sm:min-h-130 flex items-center">
             {status === "success" ? ( // if status = success
               // SHOW this message
               <div className="bg-white rounded-2xl p-12 text-center">
@@ -107,7 +107,7 @@ const ContactForm = () => {
                 {/* NAME INPUT */}
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="text-left">
-                    <label className="block text-base font-medium mb-1">
+                    <label className="block text-xl text-gray-700 font-medium mb-1">
                       First Name
                     </label>
                     <input
@@ -121,7 +121,7 @@ const ContactForm = () => {
                   </div>
 
                   <div className="text-left">
-                    <label className="block text-base font-medium mb-1">
+                    <label className="block text-xl text-gray-700 font-medium mb-1">
                       Last Name
                     </label>
                     <input
@@ -137,7 +137,7 @@ const ContactForm = () => {
 
                 {/* EMAIL INPUT */}
                 <div className="w-full text-left">
-                  <label className="block text-base font-medium mb-1">
+                  <label className="block text-xl text-gray-700 font-medium mb-1">
                     Email
                   </label>
                   <input
@@ -168,7 +168,7 @@ const ContactForm = () => {
 
                 {/* MESSAGE INPUT */}
                 <div className="my-6 text-left">
-                  <label className="block text-base font-medium mb-1">
+                  <label className="block text-xl text-gray-700 font-medium mb-1">
                     Message
                   </label>
                   <textarea

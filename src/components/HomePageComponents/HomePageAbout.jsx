@@ -4,7 +4,7 @@ import Button from "../ReusableComponents/Button";
 
 
 const stats = [
-  { value: 10, suffix: "+", label: "years of experiance"},
+  { value: 10, suffix: "+", label: "years of experience"},
   { value: 50, suffix: "+", label: "properties purchased"},
   { value: 120, suffix: "+", label: "happy clients"},
   { value: 200, suffix: "+", label: "properties analysed"},
@@ -89,7 +89,7 @@ const HomePageAbout = () => {
     >
       {/** px = horizontal (left + right) */}
       {/** py = vertical (top + bottom) */}
-      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10">
           Founder
         </h2>
@@ -113,7 +113,7 @@ const HomePageAbout = () => {
               Timur Khismatullin
             </h2>
 
-            <div className="space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+            <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4 text-xl">
               <p className="leading-relaxed">
                 Expert and mentor in buying and investing in UK property.
               </p>
@@ -130,7 +130,7 @@ const HomePageAbout = () => {
                 the mistakes many buyers make.
               </p>
 
-              <div className="mt-auto mb-10">
+              <div className="mt-auto mb-10 text-base">
                 <Button title="Read More" link={"/about"} />
               </div>
             </div>

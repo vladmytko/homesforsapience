@@ -63,9 +63,9 @@ const TestimonialSection = () => {
   return (
     <section
       id="Testimonials"
-      className="w-full bg-(--color-bg-warm) overflow-hidden"
+      className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto py-12 sm:py-10 px-10 lg:px-12">
+      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-10 lg:px-12">
         <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10 ">
           Hear From Our Clients
         </h2>
@@ -73,7 +73,7 @@ const TestimonialSection = () => {
         <Slider {...settings}>
           {testimonialsData.map((item) => (
             <div key={item.id} className="px-3 h-full">
-              <div className="flex flex-col justify-between flex-1 min-h-120 max-h-120 w-full max-w-117.5 mx-auto bg-white lg:px-7 p-6 rounded-2xl shadow-sm">
+              <div className="flex flex-col bg-(--color-bg-warm2) justify-between border-2 border-(--color-brand-primary) flex-1 min-h-120 max-h-120 w-full max-w-117.5 mx-auto lg:px-7 p-6 rounded-2xl shadow-sm">
                 <div className="flex-1">
                   <div className="flex items-center">
                     {/* <img
