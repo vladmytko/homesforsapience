@@ -18,7 +18,7 @@ const Services = () => {
             {ServicesItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-(--color-bg-warm) border-3 border-(--color-brand-primary) border- flex flex-col h-100 max-w-140 justify-self-center mb-5 rounded-3xl drop-shadow-[0_8px_15px_rgba(0,0,0,0.15)] hover:bg-amber-50"> {/**md:last:col-span-2 md:last:justify-self-center xl:last:col-span-1 xl:last:justify-self-auto */} 
+                className="bg-(--color-bg-warm) border-3 border-(--color-brand-primary) border- flex flex-col h-100 max-w-140 justify-self-center mb-5 rounded-3xl drop-shadow-[0_8px_15px_rgba(0,0,0,0.15)] hover:bg-amber-50 "> {/**md:last:col-span-2 md:last:justify-self-center xl:last:col-span-1 xl:last:justify-self-auto */} 
                 <div className="p-6 flex flex-col flex-1 ">
                   <h3 className="text-3xl sm:text-4xl font-medium px-2">
                     {item.title}

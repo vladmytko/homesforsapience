@@ -2,7 +2,7 @@ export const ServicesItems = [
   {
     id: 1,
     title: "Consultancy",
-    link: "/services/consultation",
+    link: "/consultation",
     description: [
       "Expert guidance tailored to your situation.",
       "A focused one-hour session where we analyse your goals, finances, and property strategy.",
@@ -11,8 +11,8 @@ export const ServicesItems = [
 
   {
     id: 2,
-    title: "Coaching",
-    link: "/services/coaching",
+    title: "Mentorship",
+    link: "/mentorship",
     description: [
       "One-to-one mentoring programme is designed to guide you through every step of the process.",
       "Whether you’re preparing for your first purchase or you’re an experienced investor looking to scale.",

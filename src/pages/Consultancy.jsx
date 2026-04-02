@@ -1,12 +1,58 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "../components/ReusableComponents/Navbar";
 import { assets_manager } from "../assets/assets_manager";
 import Button from "../components/ReusableComponents/Button";
-import TestimonialsSection from "../components/HomePageComponents/HomeTestimonials/TestimonialSection"
-import Footer from '../components/ReusableComponents/Footer'
-import ContactForm from '../components/ReusableComponents/ContactForm'
+import TestimonialsSection from "../components/HomePageComponents/HomeTestimonials/TestimonialSection";
+import Footer from "../components/ReusableComponents/Footer";
+import ContactForm from "../components/ReusableComponents/ContactForm";
+import ServiceCards from "../components/ReusableComponents/ServiceCards";
+motion
 
 const Consultancy = () => {
+  const consultancyPoints = [
+    "Reviewing your current financial position",
+    "Identifying market opportunities",
+    "Understanding mortgages and funding options",
+    "Analysing potential deals",
+    "Planning refurbishment and value-add strategies",
+    "Optimising rental strategy and cash flow",
+    "Scaling and structuring your property portfolio",
+    "Avoiding common investment mistakes"
+  ];
+
+  const consultancyPointsTitle = [
+    "Financial Review",
+    "Opportunities",
+    "Financing",
+    "Analysis",
+    "Refurbishment",
+    "Optimisation",
+    "Scaling & Structure",
+    "Risk Avoidance"
+  ];
+
+  const listContainerVariables = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const listItemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 3,
+        ease: [0.25, 0.1, 0.25, 1],
+      },
+    },
+  };
+
   return (
     <section className="overflow-hidden">
       <Navbar />
@@ -14,9 +60,9 @@ const Consultancy = () => {
       {/** py = vertical (top + bottom) */}
 
       <div className="bg-(--color-bg-gray) w-full">
-        <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
-            Consultancy
+        <div className="lg:max-w-7xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
+          <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10">
+            Property Investment Consultation
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -69,138 +115,52 @@ const Consultancy = () => {
       </div>
 
       <div className="w-full bg-(--color-bg-warm)">
-        <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl font-medium mb-10">
-            What we can cover
+        <div className="lg:max-w-7xl mx-auto py-12 px-6 lg:px-8">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-5">
+            Consultation Focus
           </h2>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 text-gray-800 text-xl">
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Reviewing your current financial position</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Investment strategies and market opportunities</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Understanding mortgages and funding options</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Analysing potential deals</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Planning refurbishment or rental strategy</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <img
-                src={assets_manager.tick}
-                alt="tick"
-                className="w-8 h-8 shrink-0"
-              />
-              <span>Scaling an existing portfolio</span>
-            </li>
-          </ul>
-
-          <p className="text-center text-xl mt-10">
-            Each consultation is tailored to your situation — no generic advice
-            or templates. You will also receive a recording of the session, so
-            you can revisit key insights and implement them confidently.
-          </p>
-        </div>
-      </div>
-
-      <div className="w-full bg-(--color-bg-warm2)">
-        <div className="lg:max-w-7xl mx-auto py-12 sm:py-8 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl font-medium mb-10">
-            Cost of Sessions
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-7xl">
-            <div className="bg-white rounded-lg shadow-[0_8px_24px_rgba(0,0,0,0.12)] px-8 py-10 flex flex-col h-160 max-w-120">
-              <h3 className="text-(--color-text-dark) text-3xl font-medium mb-10 text-center">
-                Personal Consultation
-              </h3>
-
-              <ul className="space-y-2 text-(--color-text-dark) text-lg leading-relaxed">
-                <li>✓ clear direction</li>
-                <li>✓ realistic next steps</li>
-                <li>✓ improved understanding of risks and opportunities</li>
-                <li>✓ greater confidence in your decisions</li>
-              </ul>
-
-              <p className="text-(--color-text-dark) text-4xl font-medium mt-14 mb-10">
-                £170
-              </p>
-
-              <div className="mt-auto mx-auto">
-                <Button title="Book Consultation" link={"/about"} />
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-[0_8px_24px_rgba(0,0,0,0.12)] px-8 py-10 flex flex-col h-160 max-w-120">
-              <h3 className="text-(--color-text-dark) text-3xl font-medium mb-8 text-center">
-                Free 15-min Call
-              </h3>
-
-              <div className="text-(--color-text-dark) text-base leading-relaxed space-y-5">
-                <p>
-                  If you have questions about property investment or would like
-                  to understand how I can help you, you can start with a free
-                  15-minute introductory call.
-                </p>
-
-                <div>
-                  <p className="mb-2">
-                    This is an informal conversation where we can:
-                  </p>
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>discuss your goals</li>
-                    <li>clarify your current situation</li>
-                    <li>
-                      explain how coaching or consultation could support you
-                    </li>
-                    <li>answer any initial questions</li>
-                  </ul>
+          <motion.ul
+            className="grid grid-cols-1 sm:grid-cols-2 ml-20 gap-x-10 gap-y-10 text-gray-800"
+            variants={listContainerVariables}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {consultancyPoints.map((point, index) => (
+              <motion.li
+                key={point}
+                variants={listItemVariants}
+                className="group flex items-start rounded-xl p-3 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/60 hover:shadow-md"
+              >
+                <div className="flex gap-2">
+                  <img
+                  src={assets_manager.tick}
+                  alt="tick"
+                  className="w-10 h-10 shrink-0 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-rotate-6"
+                />
+                <div className="flex flex-col">
+                  <span className="text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
+                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-xl text-gray-400">
+                  {point}
+                </span>
                 </div>
-              </div>
+                </div>
+                
+              </motion.li>
+            ))}
+          </motion.ul>
 
-              <div className="mt-auto mx-auto">
-                <Button title="Book Free Call" link={"/about"} />
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
-      <TestimonialsSection />
-      <ContactForm/>
-      <Footer />
 
+      <ServiceCards />
+      <TestimonialsSection />
+      <ContactForm />
+      <Footer />
     </section>
   );
-}
+};
 
 export default Consultancy;

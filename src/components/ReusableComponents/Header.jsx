@@ -29,7 +29,7 @@ const Header = ({
                 {showConsultationButton && (
                     <Link
                         to="/consultation"
-                        className='w-52.5 px-8 py-3 border border-secondary rounded bg-secondary hover:bg-buttonhover transition-colors duration-300'
+                        className='w-52.5 px-8 py-3 rounded bg-(--color-button-primary) hover:bg-(--color-button-primary-hover) transition-colors duration-300'
                     >
                         Get Consultation
                     </Link>
@@ -38,7 +38,7 @@ const Header = ({
                 {showAboutButton && (
                     <Link
                         to="/about"
-                        className='w-52.5  border border-white px-8 py-3 rounded hover:bg-secondary hover:border-secondary transition-colors duration-300'
+                        className='w-52.5 px-8 py-3 rounded transition-colors duration-300 bg-(--color-brand-secondary) text-gray-900 font-medium'
                     >
                         About
                     </Link>
