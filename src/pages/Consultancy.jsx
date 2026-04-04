@@ -54,7 +54,7 @@ const Consultancy = () => {
   };
 
   return (
-    <section className="overflow-hidden">
+    <section>
       <Navbar />
       {/** px = horizontal (left + right) */}
       {/** py = vertical (top + bottom) */}

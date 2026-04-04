@@ -9,7 +9,7 @@ import ServiceCards from "../components/ReusableComponents/ServiceCards";
 
 const Mentorship = () => {
   return (
-    <section className="overflow-hidden">
+    <section>
       <Navbar />
       {/** px = horizontal (left + right) */}
       {/** py = vertical (top + bottom) */}
@@ -23,9 +23,9 @@ const Mentorship = () => {
             <div className="flex flex-col lg:flex-row lg:gap-10">
               {/** Left Side - Image */}
               <div className=" order-2 lg:order-1">
-                <div className="relative h-auto w-100 lg:w-112.5 rounded">
+                <div className="relative h-auto w-100 lg:w-160 rounded">
                   <img
-                    src={assets_manager.home_founder}
+                    src={assets_manager.services}
                     alt="Founder"
                     className="w-full h-full rounded"
                   />
