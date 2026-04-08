@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Mentorship from "./pages/Mentorship";
 import CaseStudies from "./pages/CaseStudies";
 import Drybridge from "./pages/CaseStudiesPages/Drybridge";
+import Turnberry from "./pages/CaseStudiesPages/Turnberry";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/mentorship" element={<Mentorship />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/case-studies/drybridge" element={<Drybridge />} />
+        <Route path="/case-studies/turnberry" element={<Turnberry />} />
       </Routes>
     </>
   )

@@ -1,6 +1,7 @@
 import React from "react";
 import { CaseStudiesItems } from "./CaseStudiesItems";
 import Button from "../../ReusableComponents/Button";
+import { Link } from "react-router-dom";
 
 const HomeCaseStudies = () => {
   return (
@@ -16,8 +17,9 @@ const HomeCaseStudies = () => {
         <div className="container mx-auto">
           <div className="grid sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
             {CaseStudiesItems.map((item) => (
-              <div
+              <Link
                 key={item.id}
+                to={item.link}
                 className="group bg-transparent flex flex-col h-100 max-w-90 rounded-3xl justify-self-center transform-gpu transition duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
               >
                 {/* image + optional badge */}
@@ -25,11 +27,11 @@ const HomeCaseStudies = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-110"
+                    className="w-auto h-full object-cover transition duration-700 ease-out group-hover:scale-110"
                   />
 
                   {/* gradient overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent transition duration-500 ease-out group-hover:from-black/95 group-hover:via-black/45"></div>
+                  {/* <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent transition duration-500 ease-out group-hover:from-black/95 group-hover:via-black/45"></div> */}
                   <div className="absolute inset-0 bg-white/0 transition duration-500 ease-out group-hover:bg-white/5"></div>
 
                   {/* content */}
@@ -50,27 +52,7 @@ const HomeCaseStudies = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="text-xl px-5 flex flex-row justify-between">
-                  <p className="">{item.title}</p>
-
-                  <p className="">£150,000</p>
-                </div> */}
-
-          
-
-                {/* <div className="px-3 mb-2">
-                  <div className="flex gap-2 px-2 text-center bg-(--color-bg-warm2) rounded-2xl mt-4">
-                    {(Array.isArray(item.description)
-                      ? item.description
-                      : String(item.description).split(".").filter(Boolean)
-                    ).map((line, index) => (
-                      <p key={index} className="text-base leading-relaxed ">
-                        {line.trim()}
-                      </p>
-                    ))}
-                  </div>
-                </div> */}
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -10,8 +10,8 @@ const Drybridge = () => {
     <section className="overflow-hidden">
     <Navbar />
     <Header
-        title="Drybridge Rd"
-        backgroundImage={assets_manager.living_room_after2}
+        title="Drybridge Road"
+        backgroundImage={assets_manager.drybridge_hero}
         showConsultationButton={true}
         showAboutButton={true}
       />

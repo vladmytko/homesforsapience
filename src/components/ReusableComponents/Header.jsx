@@ -10,7 +10,7 @@ const Header = ({
 }) => {
   return (
     <div 
-        className='h-[80vh] md-4 bg-cover bg-center flex items-center w-full overflow-hidden'
+        className='h-[80vh] md-4 bg-cover bg-bottom flex items-center w-full overflow-hidden'
         style={{backgroundImage: `url(${backgroundImage})`}}
     >
 
