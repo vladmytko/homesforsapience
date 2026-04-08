@@ -57,6 +57,8 @@ import turnberry_livingroom_before from "./case_studies_images/turnberry_images/
 import turnberry_livingroom_after_3 from "./case_studies_images/turnberry_images/turnberry_livingroom_after_3.jpg"
 import turnberry_garden_before from "./case_studies_images/turnberry_images/turnberry_garden_before.jpeg"
 
+// Mosspark
+
 export const assets_manager = {
   logo,
   home_hero,
@@ -115,7 +117,6 @@ export const assets_manager = {
   turnberry_livingroom_after,
   turnberry_livingroom_before,
   turnberry_garden_before,
-  turnberry_kitchen_after_2
-  
+  turnberry_kitchen_after_2,
 
 };

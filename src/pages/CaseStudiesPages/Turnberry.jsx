@@ -21,6 +21,50 @@ const Turnberry = () => {
         "This 2 bedroom upper cottage flat was bought in distressed condition. This property gone through total redecoration with new kitchen, bathroom, landscaping.",
         "It takes 2 months to complete refurbishment and dress this property for sale. This flat was sold within 6 days on the market. Thanks our team of investors and builders who make it possible!",
       ]}
+
+      sections={[
+                {
+                  title: "Investment Breakdown",
+                  lines: [
+                    "Purchase price: £57,500",
+                    "Fees and costs: £8,300",
+                    "Refurbishment: £6,672",
+                    "Total investment: £67,972",
+                  ],
+                  image: {
+                    src: assets_manager.turnberry_kitchen_after,
+                    alt: "Kitchen after refurbishment",
+                  },
+                  layout: "image-right",
+                },
+                {
+                  title: "Post-Refurbishment",
+                  lines: [
+                    "Renovated market value: £80,000",
+                    "Mortgage (75% LTV): £60,000",
+                    "Equity created: £12,028",
+                  ],
+                  image: {
+                    src: assets_manager.turnberry_livingroom_after_3,
+                    alt: "Bedroom after refurbishment",
+                  },
+                  layout: "image-left",
+                },
+                {
+                  title: "Rental Breakdown",
+                  lines: [
+                    "Gross monthly rent: £525",
+                    "Net monthly cashflow: £304",
+                    "Net annually cashflow: £3,645",
+                  ],
+                  image: {
+                    src: assets_manager.turnberry_bedroom_after,
+                    alt: "Bathroom after refurbishment",
+                  },
+                  layout: "image-right",
+                },
+              ]}
+
       beforeAfterGroups={[
         
         {

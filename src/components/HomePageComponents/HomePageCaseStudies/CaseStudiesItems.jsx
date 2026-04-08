@@ -6,8 +6,9 @@ export const CaseStudiesItems = [
     title: "Drybridge Road",
     link: "/case-studies/drybridge",
     image: assets_manager.drybridge_grid,
-    intro: "4-bedroom detached house",
-    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
+    intro: "A thoughtfully designed home combining modern comfort with a warm and inviting living space.",
+    type: "Semi-detached",
+    beds: "4 bedroom"
   },
 
   {
@@ -15,8 +16,9 @@ export const CaseStudiesItems = [
     title: "Dyke Road",
     link: "/case-studies/hardridge",
     image: assets_manager.dyke_grid,
-    intro: "3-bedroom renovation project",
-    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
+    intro: "A contemporary living space that blends elegance, light, and comfort for modern lifestyles.",
+    type: "Semi-detached",
+    beds: "2 bedroom"
   },
   
   {
@@ -24,7 +26,8 @@ export const CaseStudiesItems = [
     title: "Mosspark Road",
     link: "/case-studies/mosspark",
     image: assets_manager.mosspark_grid,
-    intro: "2-bedroom buy-to-let",
-    description: [" Purchase £110k", "Renovation £32k", "Final Value £190k"],
+    intro: "A stylish and functional residence crafted to offer both comfort and everyday practicality.",
+    type: "Terraced House",
+    beds: "3 bedroom"
   },
 ];

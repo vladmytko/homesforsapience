@@ -39,15 +39,15 @@ const HomeCaseStudies = () => {
                     <h3 className="text-xl font-semibold">{item.title}</h3>
 
                     <p className="text-sm text-gray-200">
-                      Cozy wooden chalet nestled in the Swiss Alps, offering a warm fireplace and scenic views.
+                      {item.intro}
                     </p>
 
                     <div className="flex gap-2 text-xs">
                       <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
-                        Semi-detached
+                        {item.type}
                       </span>
                       <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
-                        4 Bedroom
+                        {item.beds}
                       </span>
                     </div>
                   </div>
@@ -57,7 +57,7 @@ const HomeCaseStudies = () => {
           </div>
         </div>
         <div className="mt-11 pb-4 items-center text-center">
-          <Button title="Explore Case Studies" link="/projects" />
+          <Button title="Explore Case Studies" link="/case-studies" />
         </div>
       </div>
     </section>
