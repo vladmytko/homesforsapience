@@ -26,10 +26,10 @@ const Mosspark = () => {
           {
             title: "Investment Breakdown",
             lines: [
-              "Purchase price: £57,500",
-              "Fees and costs: £8,300",
-              "Refurbishment: £6,672",
-              "Total investment: £67,972",
+              "Purchase price: Need to update",
+              "Fees and costs: Need to update",
+              "Refurbishment: Need to update",
+              "Total investment: Need to update",
             ],
             image: {
               src: mosspark_assets.mosspark_bedroom1_2,

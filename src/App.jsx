@@ -14,6 +14,7 @@ import Charles from "./pages/CaseStudiesPages/Charles";
 import Paislay from "./pages/CaseStudiesPages/Paislay";
 import Netherhill from "./pages/CaseStudiesPages/Netherhill";
 import Newton from "./pages/CaseStudiesPages/Newton";
+import Testimonials from "./pages/Testimonials";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/consultation" element={<Consultancy />} />
         <Route path="/mentorship" element={<Mentorship />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/case-studies/drybridge" element={<Drybridge />} />
         <Route path="/case-studies/turnberry" element={<Turnberry />} />
