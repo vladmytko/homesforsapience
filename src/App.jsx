@@ -12,6 +12,7 @@ import Huntersfield from "./pages/CaseStudiesPages/Huntersfield";
 import DukeRoad from "./pages/CaseStudiesPages/DukeRoad";
 import Charles from "./pages/CaseStudiesPages/Charles";
 import Paislay from "./pages/CaseStudiesPages/Paislay";
+import Netherhill from "./pages/CaseStudiesPages/Netherhill";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/case-studies/duke-road" element={<DukeRoad />} />
         <Route path="/case-studies/charles-avenue" element={<Charles />} />
         <Route path="/case-studies/paislay-road" element={<Paislay />} />
+        <Route path="/case-studies/netherhill-road" element={<Netherhill />} />
       </Routes>
     </>
   )
