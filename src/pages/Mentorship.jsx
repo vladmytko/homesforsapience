@@ -16,14 +16,14 @@ const Mentorship = () => {
 
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl font-medium mb-10">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
             Mentorship
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
               {/** Left Side - Image */}
               <div className=" order-2 lg:order-1">
-                <div className="relative h-auto w-100 lg:w-160 rounded">
+                <div className="relative h-auto w-auto md:w-160 rounded mt-7 lg:mt-0">
                   <img
                     src={assets_manager.services}
                     alt="Founder"
@@ -35,7 +35,7 @@ const Mentorship = () => {
               {/* RIGHT SIDE - Text */}
 
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-xl">
-                <div className="space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+                <div className="space-y-4 text-base sm:text-xl text-gray-700 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     With nearly a decade of hands-on experience in the UK
                     property market — across sourcing, mortgages, renovation,
@@ -63,11 +63,11 @@ const Mentorship = () => {
 
       <div className="w-full bg-(--color-bg-warm)">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl font-medium mb-10">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
             What we can cover
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-left text-xl text-gray-900">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-left text-base sm:text-xl text-gray-900">
             <p className="leading-relaxed">
               Structured three-month coaching programme designed to help you
               move forward quickly. If you already have investment experience, I

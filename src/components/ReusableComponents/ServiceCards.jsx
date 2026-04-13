@@ -5,7 +5,7 @@ const ServiceCards = () => {
   return (
     <section id="free-call">
       <div className="w-full bg-(--color-bg-warm2)">
-        <div className="lg:max-w-7xl mx-auto py-12 sm:py-8 px-2 sm:px-6 lg:px-8">
+        <div className="lg:max-w-7xl mx-auto py-12 sm:py-8 px-3 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
             Cost of Sessions
           </h2>

@@ -57,7 +57,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row gap-10 mx-auto max-w-xl lg:max-w-none lg:w-full ">
           {/* LEFT TEXT */}
           <div className="flex flex-col text-left text-black mt-5 lg:mt-28">
-            <div className="text-xl mb-2 text-gray-700 leading-relaxed">
+            <div className="text-base sm:text-xl mb-2 text-gray-700 leading-relaxed">
               <p className="mb-2">
                 Fill out the application and we will contact you in a way
                 convenient for you.
