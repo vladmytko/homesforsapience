@@ -3,6 +3,7 @@ import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../../ReusableComponents/Button";
+import { useEffect, useState } from "react";
 
 const Slider = SlickSlider?.default || SlickSlider;
 
@@ -34,24 +35,38 @@ const ArrowButton = ({ className, style, onClick, direction }) => (
 );
 
 const TestimonialSection = () => {
+  const [slidesToShow, setSlidesToShow] = useState(1); // save mobile-first default
+
+  useEffect(() => {
+    const getSlidesToShow = () => {
+      if (window.innerWidth >= 1024) return 3;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    };
+
+    const handleResize = () => setSlidesToShow(getSlidesToShow());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow, // default: large screen
     slidesToScroll: 1,
     prevArrow: <ArrowButton direction="prev" />,
     nextArrow: <ArrowButton direction="next" />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // below 1024px -> medium screen
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 640, // below 640px -> small screen
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -65,15 +80,15 @@ const TestimonialSection = () => {
       id="Testimonials"
       className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-10 lg:px-12">
+      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-4 sm:px-6 lg:px-12">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10 ">
           Hear From Our Clients
         </h2>
 
         <Slider {...settings}>
           {testimonialsData.map((item) => (
-            <div key={item.id} className="px-3 h-full">
-              <div className="flex flex-col bg-(--color-bg-warm2) justify-between border-2 border-(--color-brand-primary) flex-1 min-h-150 sm:max-h-120 w-full max-w-117.5 mx-auto lg:px-7 p-6 rounded-2xl shadow-sm">
+            <div key={item.id} className="px-2 sm:px-3 h-full">
+              <div className="flex flex-col bg-(--color-bg-warm2) justify-between border-2 border-(--color-brand-primary) flex-1 min-h-150 sm:max-h-120 w-full max-w-117.5 mx-auto lg:px-7 p-3 sm:p-6 rounded-2xl shadow-sm">
                 <div className="flex-1">
                   <div className="flex items-center">
                     {/* <img

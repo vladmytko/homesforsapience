@@ -7,6 +7,7 @@ import drybridge_grid from "./drybridge_grid.jpeg";
 import tick from "./tick.png";
 import services from "./services.webp";
 import case_studies_hero from "./case_studies_hero.webp";
+import consultation_image from './consultation.webp'
 
 // Case Studies Grid Images
 import drybridgeImage from '../assets/case_studies_images/home_page_case_stydies_images/drybridge.jpeg'
@@ -69,6 +70,7 @@ export const assets_manager = {
   tick,
   services,
   case_studies_hero,
+  consultation_image,
 
   // Case Studies Grid Images
   drybridgeImage,

@@ -74,26 +74,26 @@ const Consultancy = () => {
 
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-10">
             Property Investment Consultation
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
               {/** Left Side - Image */}
-              <div className=" order-2 lg:order-1">
-                <div className="relative h-auto w-100 lg:w-112.5 rounded">
+              <div className="mx-auto order-2 lg:order-1">
+                <div className="relative w-auto h-110 sm:h-150 rounded mt-3 sm:mt-0">
                   <img
-                    src={assets_manager.home_founder}
+                    src={assets_manager.consultation_image}
                     alt="Founder"
-                    className="w-full h-full rounded"
+                    className="h-full rounded object-cover"
                   />
                 </div>
               </div>
 
               {/* RIGHT SIDE - Text */}
 
-              <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-xl">
-                <div className="space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+              <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-base sm:text-xl">
+                <div className="space-y-1 sm:space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     If you are not yet ready for full coaching but want
                     professional direction, a one-hour consultation is the
@@ -134,7 +134,7 @@ const Consultancy = () => {
           </h2>
 
           <motion.ul
-            className="grid grid-cols-1 sm:grid-cols-2 ml-20 gap-x-10 gap-y-10 text-gray-800"
+            className="grid grid-cols-1 sm:grid-cols-2 md:ml-20 gap-x-10 gap-y-2 md:gap-y-10 text-gray-800"
             variants={listContainerVariables}
             initial="hidden"
             whileInView="visible"
@@ -153,8 +153,8 @@ const Consultancy = () => {
                   className="w-10 h-10 shrink-0 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-rotate-6"
                 />
                 <div className="flex flex-col">
-                  <span className="text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
-                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-xl text-gray-400">
+                  <span className="text-xl sm:text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
+                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-400">
                   {point}
                 </span>
                 </div>
