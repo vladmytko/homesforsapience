@@ -8,6 +8,8 @@ import tick from "./tick.png";
 import services from "./services.webp";
 import case_studies_hero from "./case_studies_hero.webp";
 import consultation_image from './consultation.webp'
+import about_image1 from './about_image1.webp'
+import about_image2 from './about_image2.webp'
 
 // Case Studies Grid Images
 import drybridgeImage from '../assets/case_studies_images/home_page_case_stydies_images/drybridge.jpeg'
@@ -71,6 +73,8 @@ export const assets_manager = {
   services,
   case_studies_hero,
   consultation_image,
+  about_image1,
+  about_image2,
 
   // Case Studies Grid Images
   drybridgeImage,
