@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
-motion;
 
 const ContactForm = () => {
   const form = useRef();
@@ -52,25 +50,21 @@ const ContactForm = () => {
       className="w-full bg-(--color-bg-gray) overflow-hidden"
     >
       <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
-        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl">
-          Any Questions? 
+        <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl">
+          Any Questions?
         </h2>
-      
-      <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-      >
+
         <div className="flex flex-col lg:flex-row gap-10 mx-auto max-w-xl lg:max-w-none lg:w-full ">
           {/* LEFT TEXT */}
-          <div className="flex flex-col text-left text-black mt-28">
+          <div className="flex flex-col text-left text-black mt-5 lg:mt-28">
             <div className="text-xl mb-2 text-gray-700 leading-relaxed">
+              <p className="mb-2">
+                Fill out the application and we will contact you in a way
+                convenient for you.
+              </p>
 
-              <p className="mb-2">Fill out the application and we will contact you in a way convenient for you.</p>
+              <br />
 
-              <br/>              
-              
               <p className="mb-2">Email: info@homesforsapiens.com</p>
 
               <p className="mb-2">Phone: 07400049497</p>
@@ -200,9 +194,11 @@ const ContactForm = () => {
                     />
                     <span className="pr-2">
                       By submitting this form, you agree to be contacted
-                      regarding your enquiry. Your details will not be shared. Check <a href="/privacypolicy" className="hover:underline">
-                 Privacy Policy
-              </a>
+                      regarding your enquiry. Your details will not be shared.
+                      Check{" "}
+                      <a href="/privacypolicy" className="hover:underline">
+                        Privacy Policy
+                      </a>
                     </span>
                   </label>
                 </div>
@@ -230,10 +226,9 @@ const ContactForm = () => {
             )}
           </div>
         </div>
-      </motion.div>
       </div>
     </section>
   );
 };
 
-export default ContactForm
+export default ContactForm;

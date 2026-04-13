@@ -66,14 +66,14 @@ const TestimonialSection = () => {
       className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-10 px-10 lg:px-12">
-        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10 ">
+        <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10 ">
           Hear From Our Clients
         </h2>
 
         <Slider {...settings}>
           {testimonialsData.map((item) => (
             <div key={item.id} className="px-3 h-full">
-              <div className="flex flex-col bg-(--color-bg-warm2) justify-between border-2 border-(--color-brand-primary) flex-1 min-h-120 max-h-120 w-full max-w-117.5 mx-auto lg:px-7 p-6 rounded-2xl shadow-sm">
+              <div className="flex flex-col bg-(--color-bg-warm2) justify-between border-2 border-(--color-brand-primary) flex-1 min-h-150 sm:max-h-120 w-full max-w-117.5 mx-auto lg:px-7 p-6 rounded-2xl shadow-sm">
                 <div className="flex-1">
                   <div className="flex items-center">
                     {/* <img
@@ -82,7 +82,7 @@ const TestimonialSection = () => {
                           alt=""
                         /> */}
                     <div className="ml-1">
-                      <p className="text-xl font-medium text-gray-900">
+                      <p className="text-lg sm:text-xl font-medium text-gray-900">
                         {item.name}
                       </p>
                       {/* <p className="mt-0.5 text-sm font-pj text-gray-600">
@@ -135,7 +135,7 @@ const TestimonialSection = () => {
                   </div>
 
                   <blockquote className="flex-1 mt-3 overflow-hidden">
-                    <p className="text-lg leading-relaxed text-gray-900 font-pj">
+                    <p className="text-base sm:text-lg leading-relaxed text-gray-900">
                       "{item.review}"
                     </p>
                   </blockquote>

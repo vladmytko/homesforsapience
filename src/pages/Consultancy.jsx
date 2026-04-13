@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/ReusableComponents/Navbar";
 import { assets_manager } from "../assets/assets_manager";
@@ -7,6 +7,7 @@ import TestimonialsSection from "../components/HomePageComponents/HomeTestimonia
 import Footer from "../components/ReusableComponents/Footer";
 import ContactForm from "../components/ReusableComponents/ContactForm";
 import ServiceCards from "../components/ReusableComponents/ServiceCards";
+import { useLocation } from "react-router-dom";
 motion
 
 const Consultancy = () => {
@@ -52,6 +53,18 @@ const Consultancy = () => {
       },
     },
   };
+
+  // Navigation to free call from the footer
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#free-call') {
+      const el = document.getElementById("free-call");
+      if(el) {
+        el.scrollIntoView({ behavior: "smooth"})
+      }
+    }
+  }, [location])
 
   return (
     <section>

@@ -1,9 +1,10 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
 
 const ServiceCards = () => {
   return (
-    <div className="w-full bg-(--color-bg-warm2)">
+    <section id="free-call">
+      <div className="w-full bg-(--color-bg-warm2)">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-8 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl font-medium mb-10">
             Cost of Sessions
@@ -71,7 +72,8 @@ const ServiceCards = () => {
           </div>
         </div>
       </div>
-  )
-}
+    </section>
+  );
+};
 
-export default ServiceCards
+export default ServiceCards;

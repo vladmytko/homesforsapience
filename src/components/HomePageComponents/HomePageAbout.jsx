@@ -89,31 +89,31 @@ const HomePageAbout = () => {
     >
       {/** px = horizontal (left + right) */}
       {/** py = vertical (top + bottom) */}
-      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
-        <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-10">
+      <div className="max-w-7xl sm:mx-auto py-12 sm:py-10 px-6 lg:px-8">
+        <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
           Founder
         </h2>
 
-        <div className="flex flex-col lg:flex-row lg:gap-10">
+        <div className="flex flex-col md:flex-row lg:gap-10">
           {/** Left Side - Image */}
-          <div className="lg:w-2/5 order-2 lg:order-1">
-            <div className="relative h-auto w-100 lg:w-112.5 rounded">
+          <div className="w-full md:w-1/2 lg:w-2/5 order-2 lg:order-1 sm:mx-5 flex justify-center md:justify-start">
+            <div className="relative w-full max-w-80 md:max-w-90 lg:max-w-112.5 rounded overflow-hidden">
               <img
                 src={assets_manager.home_founder}
                 alt="Founder"
-                className="w-full h-full rounded"
+                className="block w-full h-auto rounded"
               />
             </div>
           </div>
 
           {/* RIGHT SIDE - Text */}
 
-          <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col">
+          <div className="w-full lg:w-1/2 order-1 md:order-2 flex flex-col sm:mx-5">
             <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
               Timur Khismatullin
             </h2>
 
-            <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4 text-xl">
+            <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4 text-base sm:text-xl">
               <p className="leading-relaxed">
                 Expert and mentor in buying and investing in UK property.
               </p>
@@ -144,7 +144,7 @@ const HomePageAbout = () => {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className={`flex flex-col items-center transform transition-all duration-700 ease-out ${
+              className={`flex flex-col items-center text-center transform transition-all duration-700 ease-out ${
                 startCounting
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
