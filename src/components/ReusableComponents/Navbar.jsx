@@ -225,7 +225,7 @@ export const Navbar = () => {
             </div>
 
             <NavLink
-              to='/contact'
+              to='/consultation#free-call'
               onClick={closeMobileMenu}
               style={{
                 textDecoration: 'none',
