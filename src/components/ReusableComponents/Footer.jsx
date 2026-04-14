@@ -13,9 +13,9 @@ const Footer = () => {
             <ul class="flex items-center space-x-3 mt-5">
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/timur.khismatullin.7"
                   title=""
-                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] focus:bg-blue-600"
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
                     class="w-9 h-9"
@@ -30,9 +30,9 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/timur_uk_property/"
                   title=""
-                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] focus:bg-blue-600"
+                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
                     class="w-9 h-9"
