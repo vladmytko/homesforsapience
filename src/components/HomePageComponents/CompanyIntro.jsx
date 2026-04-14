@@ -9,7 +9,7 @@ const CompanyIntro = () => {
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
-          Homes for sapience - property investment and consultancy
+          Homes For Sapiens - property investment and consultancy
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-left text-base sm:text-xl">

@@ -85,7 +85,7 @@ export const Navbar = () => {
                 letterSpacing: '-0.03em',
               }}
             >
-              Homes For Sapience
+              Homes For Sapiens
             </NavLink>
           )}
 
