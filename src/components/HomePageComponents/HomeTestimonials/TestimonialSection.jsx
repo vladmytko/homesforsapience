@@ -35,15 +35,16 @@ const ArrowButton = ({ className, style, onClick, direction }) => (
 );
 
 const TestimonialSection = () => {
-  const [slidesToShow, setSlidesToShow] = useState(1); // save mobile-first default
 
-  useEffect(() => {
-    const getSlidesToShow = () => {
+  const getSlidesToShow = () => {
       if (window.innerWidth >= 1024) return 3;
       if (window.innerWidth >= 640) return 2;
       return 1;
     };
 
+  const [slidesToShow, setSlidesToShow] = useState(getSlidesToShow); // save mobile-first default
+
+  useEffect(() => {
     const handleResize = () => setSlidesToShow(getSlidesToShow());
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

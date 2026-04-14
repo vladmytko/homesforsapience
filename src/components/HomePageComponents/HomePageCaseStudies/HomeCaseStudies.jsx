@@ -20,14 +20,14 @@ const HomeCaseStudies = () => {
               <Link
                 key={item.id}
                 to={item.link}
-                className="group bg-transparent flex flex-col lg:h-100 xl:max-w-90 rounded-3xl justify-self-center transform-gpu transition duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
+                className="group bg-transparent flex flex-col lg:h-100 xl:max-w-90 rounded-3xl justify-self-center hover:-translate-y-2 hover:scale-[1.02]"
               >
                 {/* image + optional badge */}
-                <div className="relative w-full h-100 rounded-3xl overflow-hidden shadow-lg transition duration-500 ease-out group-hover:shadow-2xl">
+                <div className="relative w-full h-100 rounded-3xl overflow-hidden shadow-lg transform-gpu transition duration-500 ease-out group-hover:shadow-2xl">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-auto h-full object-cover transition duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-110"
                   />
 
                   {/* gradient overlay */}

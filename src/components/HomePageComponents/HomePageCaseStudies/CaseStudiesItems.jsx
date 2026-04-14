@@ -14,7 +14,7 @@ export const CaseStudiesItems = [
   {
     id: 2,
     title: "Dyke Road",
-    link: "/case-studies/hardridge",
+    link: "/case-studies/duke-road",
     image: assets_manager.dyke_grid,
     intro: "A contemporary living space that blends elegance, light, and comfort for modern lifestyles.",
     type: "Semi-detached",

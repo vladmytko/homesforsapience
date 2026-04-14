@@ -13,7 +13,7 @@ export const Navbar = () => {
     { label: 'Case Studies', path: '/case-studies' },
     { label: 'Testimonials', path: '/testimonials' },
     { label: 'Blog', path: '/blog' },
-    { label: 'Contact', path: '/contact' },
+    { label: 'Contact', path: '/#Contact', neverActive: true },
   ]
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export const Navbar = () => {
   const baseLinkStyle = {
     textDecoration: 'none',
     color: '#F7F4EB',
-    fontSize: '15px',
+    fontSize: '16px',
     fontWeight: 500,
     transition: 'opacity 0.2s ease',
   }
@@ -103,8 +103,8 @@ export const Navbar = () => {
                   to={link.path}
                   style={({ isActive }) => ({
                     ...baseLinkStyle,
-                    opacity: isActive ? 1 : 0.75,
-                    fontWeight: isActive ? 700 : 500,
+                    opacity: (isActive && !link.neverActive) ? 1 : 0.75,
+                    fontWeight: (isActive && !link.neverActive) ? 700 : 500,
                   })}
                 >
                   {link.label}
@@ -215,7 +215,7 @@ export const Navbar = () => {
                       textDecoration: 'none',
                       color: '#111111',
                       fontSize: '22px',
-                      fontWeight: isActive ? 700 : 500,
+                      fontWeight: (isActive && !link.neverActive) ? 700 : 500,
                     })}
                   >
                     {link.label}
