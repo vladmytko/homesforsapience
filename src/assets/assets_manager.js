@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import home_hero from "./home_page_hero.jpg";
+import home_hero from "./main_hero.webp";
 import home_founder from "./home_founder.webp";
 import mosspark_grid from "./mosspark_grid.webp";
 import dyke_grid from "./dyke_grid.webp";
