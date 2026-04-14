@@ -34,7 +34,14 @@ const ServiceCards = () => {
               </p>
 
               <div className="mt-auto mx-auto">
-                <Button title="Book Consultation" link={"/about"} />
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1LO0rJdLPQcX0luj5EmTTjfleiRTmm1uskBSFhKAK-w8BJiJCuTf15VbVUxt9BTWaa0rAzwfuF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
+                >
+                  Book Consultation
+                </a>
               </div>
             </div>
 
@@ -66,7 +73,14 @@ const ServiceCards = () => {
               </div>
 
               <div className="mt-auto mx-auto">
-                <Button title="Book Free Call" link={"/about"} />
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3VUVI7gY4gj6XKTDQAZpTHjVGAurynnmuIEAPN_xwhdFP4cXyAfPxVPOPpEVVe45cvCKDrRPfP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
+                >
+                  Book Free Call
+                </a>
               </div>
             </div>
           </div>

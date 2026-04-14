@@ -14,7 +14,8 @@ const Footer = () => {
               <li>
                 <a
                   href="https://www.facebook.com/timur.khismatullin.7"
-                  title=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
@@ -31,7 +32,8 @@ const Footer = () => {
               <li>
                 <a
                   href="https://www.instagram.com/timur_uk_property/"
-                  title=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
