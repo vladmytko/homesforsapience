@@ -11,7 +11,7 @@ const HomeCaseStudies = () => {
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-10 px-6">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl  mb-10 ">
-          Case Studies
+          Projects
         </h2>
 
         <div className="container mx-auto">

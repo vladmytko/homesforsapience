@@ -62,7 +62,7 @@ const Footer = () => {
                   to="/about"
                   class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  About
+                  About Us
                 </Link>
               </li>
 

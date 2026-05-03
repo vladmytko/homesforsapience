@@ -31,7 +31,7 @@ const Header = ({
                         to="/consultation"
                         className='w-52.5 px-8 py-3 rounded bg-(--color-button-primary) hover:bg-(--color-button-primary-hover) transition-colors duration-300'
                     >
-                        Get Consultation
+                        Book Consultation
                     </Link>
                 )}
 
@@ -40,7 +40,7 @@ const Header = ({
                         to="/about"
                         className='w-52.5 px-8 py-3 rounded transition-colors duration-300 bg-(--color-brand-secondary) text-gray-900 font-medium'
                     >
-                        About
+                        About Us
                     </Link>
                 )}
             </div>

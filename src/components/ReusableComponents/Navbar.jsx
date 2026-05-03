@@ -9,8 +9,8 @@ export const Navbar = () => {
     { label: 'Home', path: '/' },
     { label: 'Consultation', path: '/consultation' },
     { label: 'Mentorship', path: '/mentorship' },
-    { label: 'About', path: '/about' },
-    { label: 'Case Studies', path: '/case-studies' },
+    { label: 'About Us', path: '/about' },
+    { label: 'Projects', path: '/case-studies' },
     { label: 'Testimonials', path: '/testimonials' },
     { label: 'Blog', path: '/blog' },
     { label: 'Contact', path: '/#Contact', neverActive: true },
@@ -66,7 +66,7 @@ export const Navbar = () => {
       >
         <div
           style={{
-            maxWidth: '1200px',
+            maxWidth: '1300px',
             margin: '0 auto',
             padding: '18px 24px',
             display: 'flex',
@@ -109,7 +109,29 @@ export const Navbar = () => {
                 >
                   {link.label}
                 </NavLink>
+                
               ))}
+              {/* <button
+                onClick={() => {
+                  const select = document.querySelector('.goog-te-combo')
+                  if (select) {
+                    select.value = 'ru'
+                    select.dispatchEvent(new Event('change'))
+                  }
+                }}
+                style={{
+                  marginLeft: '12px',
+                  padding: '8px 12px',
+                  borderRadius: '999px',
+                  border: '1px solid rgba(247, 244, 235, 0.35)',
+                  background: 'transparent',
+                  color: '#F7F4EB',
+                  cursor: 'pointer',
+                  fontWeight: 600,
+                }}
+              >
+                RU 
+              </button> */}
             </nav>
           ) : (
             <button
@@ -221,6 +243,27 @@ export const Navbar = () => {
                     {link.label}
                   </NavLink>
                 ))}
+                {/* <button
+                  onClick={() => {
+                    const select = document.querySelector('.goog-te-combo')
+                    if (select) {
+                      select.value = 'ru'
+                      select.dispatchEvent(new Event('change'))
+                    }
+                  }}
+                  style={{
+                    marginTop: '20px',
+                    padding: '12px',
+                    borderRadius: '999px',
+                    border: '1px solid #31110F',
+                    background: 'transparent',
+                    color: '#31110F',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                  }}
+                >
+                  Русский (Auto)
+                </button> */}
               </nav>
             </div>
 
