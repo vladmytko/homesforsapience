@@ -19,8 +19,9 @@ const Newton = () => {
         title="Buy-to-let with capital growth goal
 "
         intro={[
-          "This was first buy-to-let purchase since the portfolio acquisition in 2022.",
-          "The idea behind this project was to acquire an asset in a strong, established area with good schooling and solid long-term capital growth."
+          "To add value, we installed full gas central heating. This involved arranging for SGN to bring the gas supply to the property, followed by boiler installation, fitting new radiators, and removing the existing storage heaters. One of the trickiest parts was finding an energy supplier willing to install a new gas meter sooner than the typical 3–4 month timeframe. In this case, I switched to British Gas, which allowed us to bring the connection date forward by almost two months.",
+          "We also created a downstairs toilet by converting a large cupboard, installed a new bathroom, and carried out the usual plastering and redecoration throughout.",
+          "Six months after purchase, the property was refinanced, resulting in another strong cash-flowing unit successfully added to the portfolio."
         ]}
         sections={[
           {

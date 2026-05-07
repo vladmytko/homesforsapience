@@ -39,7 +39,8 @@ return (
             title: "Post-Refurbishment",
             lines: [
               "Renovated market value: £56,000",
-              "Mortgage: £42,000",
+              "Mortgage: 75%",
+              "Total left in deal: £15,304",
               "Equity created: -£1,304",
             ],
             image: {
