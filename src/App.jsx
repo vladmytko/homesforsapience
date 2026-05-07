@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home"
 import Consultancy from "./pages/Consultancy";
@@ -49,6 +49,7 @@ const App = () => {
         <Route path="/case-studies/netherhill-road" element={<Netherhill />} />
         <Route path="/case-studies/newton" element={<Newton />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<Navigate to="/" replace/>} />
       </Routes>
     </>
   )
