@@ -8,6 +8,7 @@ export const Navbar = () => {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Consultation', path: '/consultation' },
+    { label: 'Support', path: '/support' },
     { label: 'Mentorship', path: '/mentorship' },
     { label: 'About Us', path: '/about' },
     { label: 'Projects', path: '/case-studies' },

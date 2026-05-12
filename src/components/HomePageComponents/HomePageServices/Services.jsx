@@ -14,7 +14,7 @@ const Services = () => {
         </h2>
 
         <div className="container mx-auto px-1 sm:py-10 ">
-          <div className="grid md:grid-cols-2">
+          <div className="grid lg:grid-cols-3">
             {ServicesItems.map((item) => (
               <div
                 key={item.id}

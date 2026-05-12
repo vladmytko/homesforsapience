@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/ReusableComponents/Navbar";
 import { assets_manager } from "../assets/assets_manager";
-import Button from "../components/ReusableComponents/Button";
 import TestimonialsSection from "../components/HomePageComponents/HomeTestimonials/TestimonialSection";
 import Footer from "../components/ReusableComponents/Footer";
 import ContactForm from "../components/ReusableComponents/ContactForm";

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "./Button";
+
 
 const ContactForm = () => {
   const form = useRef();
@@ -82,7 +82,7 @@ const ContactForm = () => {
                   Thank you!
                 </h2>
                 <p className="text-xl text-gray-700 mb-6">
-                  Your message has been sent successfully. Out team will get
+                  Your message has been sent successfully. We will get
                   back to you shortly.
                 </p>
                 <p className="text-sm text-gray-500">

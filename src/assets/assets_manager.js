@@ -12,6 +12,7 @@ import about_image1 from './about_image1.webp'
 import about_image2 from './about_image2.webp'
 import podcase_image from './podcase_image.webp'
 import fundraiser_image from './fundraiser_image.webp'
+import support_image from './support.jpg'
 
 // Case Studies Grid Images
 import drybridgeImage from '../assets/case_studies_images/home_page_case_stydies_images/drybridge.jpeg'
@@ -79,6 +80,7 @@ export const assets_manager = {
   about_image2,
   podcase_image,
   fundraiser_image,
+  support_image,
 
   // Case Studies Grid Images
   drybridgeImage,
