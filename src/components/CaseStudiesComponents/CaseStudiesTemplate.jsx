@@ -101,15 +101,20 @@ const CaseStudiesTemplate = ({
 
         {sections.map((section, index) => {
 
-          // Get layout from serction, but don't crash if undefined
-          // if section.layout = image-left => isTextLeft = false
-          // if section.layout = image-right => isTextLeft = true
-          const isTextLeft = section?.layout !== 'image-left'
+          // Get layout from section, but don't crash if undefined
+          // if section.layout = image-left => isImageLeft = true
+          // if section.layout = image-right => isImageLeft = false
+          const isImageLeft = section?.layout === 'image-left'
 
           return (
             <div key={`section-${index}`} className="mt-10 grid items-center gap-7 md:grid-cols-2 justify-center ">
-              {isTextLeft ? <div className='flex justify-center text-left'>{renderTextBlock(section?.title, section?.lines)}</div> : renderImageBlock(section?.image, setSelectedImage)}
-              {isTextLeft ? renderImageBlock(section?.image, setSelectedImage) : <div className='flex justify-center text-left'>{renderTextBlock(section?.title, section?.lines)}</div>}
+              <div className={`flex justify-center text-left ${isImageLeft ? 'md:order-2' : 'md:order-1'}`}>
+                {renderTextBlock(section?.title, section?.lines)}
+              </div>
+
+              <div className={isImageLeft ? 'md:order-1' : 'md:order-2'}>
+                {renderImageBlock(section?.image, setSelectedImage)}
+              </div>
             </div>
           )
         })}
