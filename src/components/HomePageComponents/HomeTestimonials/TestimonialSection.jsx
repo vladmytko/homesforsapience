@@ -82,7 +82,7 @@ const TestimonialSection = () => {
       className="w-full bg-(--color-bg-warm2) overflow-hidden"
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-10 px-4 sm:px-6 lg:px-12">
-        <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10 ">
+        <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-5">
           Hear From Our Clients
         </h2>
 
