@@ -26,10 +26,9 @@ const Mosspark = () => {
           {
             title: "Investment Breakdown",
             lines: [
-              "Purchase price: Need to update",
-              "Fees and costs: Need to update",
-              "Refurbishment: Need to update",
-              "Total investment: Need to update",
+              "Purchase price: £130,000",
+              "Refurbishment: £34,100",
+              
             ],
             image: {
               src: mosspark_assets.mosspark_bedroom1_2,
@@ -40,28 +39,14 @@ const Mosspark = () => {
           {
             title: "Post-Refurbishment",
             lines: [
-              "Renovated market value: £80,000",
-              "Mortgage (75% LTV): £60,000",
-              "Equity created: £12,028",
+              "Total investment: £164,100",
+              "Sold for: £227,000",
             ],
             image: {
               src: mosspark_assets.mosspark_kitchen_2,
               alt: "Bedroom after refurbishment",
             },
             layout: "image-left",
-          },
-          {
-            title: "Rental Breakdown",
-            lines: [
-              "Gross monthly rent: £525",
-              "Net monthly cashflow: £304",
-              "Net annually cashflow: £3,645",
-            ],
-            image: {
-              src: mosspark_assets.mosspark_livingroom_after,
-              alt: "Bathroom after refurbishment",
-            },
-            layout: "image-right",
           },
         ]}
         beforeAfterGroups={[

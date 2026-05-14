@@ -26,10 +26,10 @@ const Turnberry = () => {
                 {
                   title: "Investment Breakdown",
                   lines: [
-                    "Purchase price: Need to update",
-                    "Fees and costs: Need to update",
-                    "Refurbishment: Need to update",
-                    "Total investment: Need to update",
+                    "Purchase price: £35,000",
+                    "Fees and costs: £1,500",
+                    "Refurbishment: £12,800",
+                    "Total investment: 49,300",
                   ],
                   image: {
                     src: assets_manager.turnberry_kitchen_after,
@@ -40,28 +40,15 @@ const Turnberry = () => {
                 {
                   title: "Post-Refurbishment",
                   lines: [
-                    "Renovated market value: £80,000",
-                    "Mortgage (75% LTV): £60,000",
-                    "Equity created: £12,028",
+                    "Selling cost: £2,100",
+                    "Sold for: £60,000",
+                    "Moderst profit: £6,100",
                   ],
                   image: {
                     src: assets_manager.turnberry_livingroom_after_3,
                     alt: "Bedroom after refurbishment",
                   },
                   layout: "image-left",
-                },
-                {
-                  title: "Rental Breakdown",
-                  lines: [
-                    "Gross monthly rent: £525",
-                    "Net monthly cashflow: £304",
-                    "Net annually cashflow: £3,645",
-                  ],
-                  image: {
-                    src: assets_manager.turnberry_bedroom_after,
-                    alt: "Bathroom after refurbishment",
-                  },
-                  layout: "image-right",
                 },
               ]}
 

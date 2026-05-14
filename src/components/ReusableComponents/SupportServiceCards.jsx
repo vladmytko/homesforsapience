@@ -4,9 +4,9 @@ const SupportServiceCards = () => {
   return (
     <section
       id="free-call"
-      className="w-full bg-(--color-bg-warm2) overflow-hidden"
+      className="w-full bg-(--color-bg-gray) overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto py-12 sm:py-10 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto py-12 sm:py-12 px-4 sm:px-6 lg:px-12">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-5">
           Book Free Call
         </h2>
@@ -14,8 +14,7 @@ const SupportServiceCards = () => {
         <div className="px-5">
           <p className="text-base sm:text-xl my-5 text-gray-900">
             Each call is tailored to your situation — no generic advice or
-            templates. You will also receive a recording of the session, so you
-            can revisit key insights.
+            templates.
           </p>
 
           <p className="text-base sm:text-xl my-5 text-gray-900">
@@ -24,20 +23,24 @@ const SupportServiceCards = () => {
             introductory call.
           </p>
 
+          <p className="text-base sm:text-xl my-5 text-gray-900">
+            Property Buying Support — £500. This service includes personalised
+            support during the property buying process, including:
+          </p>
+
           <div className="text-base sm:text-xl my-5 mb-10 text-gray-900">
-            <p className="mb-2">
-              This is an informal conversation where we can:
-            </p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>discuss your goals</li>
-              <li>clarify your current situation</li>
-              <li>
-                explain how coaching, consultation or property buying support
-                works
-              </li>
-              <li>answer any initial questions</li>
+              <li>one full day of property viewings</li>
+              <li>assistance evaluating potential properties</li>
+              <li>negotiation support with estate agencies</li>
+              <li>practical guidance throughout the process</li>
             </ul>
           </div>
+
+          <p className="text-base sm:text-xl my-5 text-gray-900 mb-10">
+            The free introductory call allows us to discuss your goals and
+            determine whether this service is the right fit for your situation.
+          </p>
 
           <div className="mt-auto mx-auto">
             <a
