@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 1024)
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 1100)
 
   const navLinks = [
     { label: 'Home', path: '/' },
@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth < 1024
+      const mobile = window.innerWidth < 1100
       setIsMobileView(mobile)
 
       if (!mobile) {

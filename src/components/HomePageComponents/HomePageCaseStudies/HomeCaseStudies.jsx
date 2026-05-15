@@ -20,7 +20,7 @@ const HomeCaseStudies = () => {
               <Link
                 key={item.id}
                 to={item.link}
-                className="group bg-transparent flex flex-col lg:h-100 xl:max-w-90 rounded-3xl justify-self-center hover:-translate-y-2 hover:scale-[1.02]"
+                className="group bg-transparent flex flex-col w-full max-w-170 lg:h-100 xl:max-w-90 rounded-3xl justify-self-center hover:-translate-y-2 hover:scale-[1.02]"
               >
                 {/* image + optional badge */}
                 <div className="relative w-full h-100 rounded-3xl overflow-hidden shadow-lg transform-gpu transition duration-500 ease-out group-hover:shadow-2xl">
