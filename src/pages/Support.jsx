@@ -56,7 +56,7 @@ const Support = () => {
 
         <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl sm:mb-10">
             Property Buying Support 
           </h2>
           <div className="justify-center">

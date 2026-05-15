@@ -13,7 +13,7 @@ const About = () => {
 
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-10 px-6 lg:px-8">
-          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-2 sm:mb-10">
+          <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-10">
             Meet The Founder
           </h2>
           <div className="justify-center">

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const renderTextBlock = (title, lines = []) => (
   <div>
-    {title ? <h2 className="m-0 text-[2rem] font-medium leading-tight text-[#1f1f1f]">{title}</h2> : null}
+    {title ? <h2 className="m-0 text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight text-[#1f1f1f]">{title}</h2> : null}
     <div className="mt-3">
       {lines.map((line, index) => (
         <p key={`${title || 'text'}-${index}`} className="my-1 leading-7 text-[#1f1f1f]">
@@ -88,7 +88,7 @@ const CaseStudiesTemplate = ({
     <section className="bg-(--color-brand-secondary) px-5 py-8 md:px-8">
       <div className="max-w-7xl mx-auto px-6  py-10 container">
         <div>
-          {title ? <h1 className="mb-4.5 text-[2.6rem] font-medium leading-[1.2] text-[#1f1f1f] ">{title}</h1> : null}
+          {title ? <h1 className="mb-4.5 text-2xl sm:text-4xl lg:text-5xl font-medium leading-[1.2] text-[#1f1f1f] ">{title}</h1> : null}
 
           <div>
             {intro.map((paragraph, index) => (
@@ -120,8 +120,8 @@ const CaseStudiesTemplate = ({
         })}
 
         {beforeAfterGroups.length > 0 ? (
-          <div className="grid gap-5.5">
-            <h2 className="m-0 text-[2.2rem] font-medium leading-tight text-[#1f1f1f]">{beforeAfterTitle}</h2>
+          <div className="grid gap-5.5"> 
+            <h2 className="m-0 text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight text-[#1f1f1f] mt-10">{beforeAfterTitle}</h2>
             {beforeAfterGroups.map((group, index) => (
               <BeforeAfterGroup key={`before-after-${index}`} group={group} onImageClick={setSelectedImage} />
             ))}

@@ -29,18 +29,24 @@ const Header = ({
                 {showConsultationButton && (
                     <Link
                         to="/consultation"
-                        className='w-52.5 px-8 py-3 rounded bg-(--color-button-primary) hover:bg-(--color-button-primary-hover) transition-colors duration-300'
+                        className='group relative overflow-hidden w-52.5 px-8 py-3 rounded bg-(--color-button-primary) text-white font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:text-gray-900'
                     >
-                        Book Consultation
+                        <>
+                            <span className='absolute inset-0 bg-(--color-brand-secondary) scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
+                            <span className='relative z-10'>Book Consultation</span>
+                        </>
                     </Link>
                 )}
 
                 {showAboutButton && (
                     <Link
                         to="/about"
-                        className='w-52.5 px-8 py-3 rounded transition-colors duration-300 bg-(--color-brand-secondary) text-gray-900 font-medium'
+                        className='group relative overflow-hidden w-52.5 px-8 py-3 rounded bg-(--color-brand-secondary) text-gray-900 font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20 hover:text-white'
                     >
-                        About Us
+                        <>
+                            <span className='absolute inset-0 bg-(--color-button-primary) scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
+                            <span className='relative z-10'>About Us</span>
+                        </>
                     </Link>
                 )}
             </div>

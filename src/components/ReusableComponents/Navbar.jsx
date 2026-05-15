@@ -50,9 +50,10 @@ export const Navbar = () => {
   const baseLinkStyle = {
     textDecoration: 'none',
     color: '#F7F4EB',
-    fontSize: '16px',
+    fontSize: '18px',
     fontWeight: 500,
-    transition: 'opacity 0.2s ease',
+    transition: 'all 0.25s ease',
+    display: 'inline-block',
   }
 
   return (
@@ -69,7 +70,7 @@ export const Navbar = () => {
           style={{
             maxWidth: '1300px',
             margin: '0 auto',
-            padding: '18px 24px',
+            padding: '10px 24px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: isMobileView ? 'flex-end' : 'space-between',
@@ -107,6 +108,16 @@ export const Navbar = () => {
                     opacity: (isActive && !link.neverActive) ? 1 : 0.75,
                     fontWeight: (isActive && !link.neverActive) ? 700 : 500,
                   })}
+                  onMouseEnter={(e) => {
+                    e.target.style.color = '#ffdedb'
+                    e.target.style.transform = 'translateY(-3px)'
+                    e.target.style.opacity = '1'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.color = '#ffffff'
+                    e.target.style.transform = 'translateY(0)'
+                    e.target.style.opacity = (link.neverActive ? '0.75' : '')
+                  }}
                 >
                   {link.label}
                 </NavLink>
@@ -239,7 +250,17 @@ export const Navbar = () => {
                       color: '#111111',
                       fontSize: '22px',
                       fontWeight: (isActive && !link.neverActive) ? 700 : 500,
+                      transition: 'all 0.25s ease',
+                      display: 'inline-block',
                     })}
+                    onMouseEnter={(e) => {
+                      e.target.style.color = '#ffe700'
+                      e.target.style.transform = 'translateY(-2px)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.color = '#111111'
+                      e.target.style.transform = 'translateY(0)'
+                    }}
                   >
                     {link.label}
                   </NavLink>

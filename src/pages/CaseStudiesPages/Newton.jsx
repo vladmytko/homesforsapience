@@ -27,10 +27,14 @@ const Newton = () => {
           {
             title: "Investment Breakdown",
             lines: [
-              "Purchase price: Need to update",
-              "Fees and costs: Need to update",
-              "Refurbishment: Need to update",
-              "Total investment: Need to update",
+
+//               Purchase £120000
+// Refurbishment £18000
+// Value after £185000
+// Rent is 1050
+              "Purchase price: £120,000",
+              "Refurbishment: £18,000",
+              "Total investment: £138,000",
             ],
             image: {
               src: newton_assets.bathroom_after2,
@@ -42,29 +46,14 @@ const Newton = () => {
           {
             title: "Post-Refurbishment",
             lines: [
-              "Renovated market value: £55,000",
-              "Mortgage: 75%",
-              "Total left in deal: £1,463",
-              "Equity created: £12,287",
+              "Renovated market value: £185,000",
+              "Rent: £1,050",
             ],
             image: {
               src: newton_assets.kitchen_after,
               alt: "Livingroom after refurbishment",
             },
             layout: "image-left",
-          },
-          {
-            title: "Rental Breakdown",
-            lines: [
-              "Gross monthly rent: £425",
-              "Net monthly cashflow: £235",
-              "Net annually cashflow: £2,820",
-            ],
-            image: {
-              src: newton_assets.bedroom2_after,
-              alt: "Bedroom after refurbishment",
-            },
-            layout: "image-right",
           },
         ]}
         beforeAfterGroups={[
