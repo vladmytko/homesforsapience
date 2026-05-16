@@ -22,11 +22,11 @@ const ServiceCards = () => {
                 Personal Consultation
               </h3>
 
-              <ul className="space-y-2 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
-                <li>✓ clear direction</li>
-                <li>✓ realistic next steps</li>
-                <li>✓ improved understanding of risks and opportunities</li>
-                <li>✓ greater confidence in your decisions</li>
+              <ul className="list-disc space-y-3 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
+                <li>clear direction</li>
+                <li>realistic next steps</li>
+                <li>improved understanding of risks and opportunities</li>
+                <li>greater confidence in your decisions</li>
               </ul>
 
               <p className="text-(--color-text-dark) text-3xl md:text-4xl font-medium mt-14 mb-10">

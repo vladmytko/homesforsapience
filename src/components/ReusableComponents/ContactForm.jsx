@@ -65,7 +65,7 @@ const ContactForm = () => {
 
               <br />
 
-              <p className="mb-2">Email: info@homesforsapiens.com</p>
+              <p className="mb-2">Email: timur@homesforsapiens.com</p>
 
               <p className="mb-2">Phone: 07400049497</p>
             </div>
