@@ -16,20 +16,13 @@ const Drybridge = () => {
         showAboutButton={true}
       />
     <CaseStudiesTemplate
-      title="A Sweet Turnaround – from Buy-to-Let to Flip"
-      intro={[
-        "This tenanted house was purchased in 2022 as part of a larger portfolio. When the numbers didn’t stack up for a traditional buy-to-let, we decided to go for a flip instead.",
-        "To add value, we removed a wall to create a bright and modern open-plan kitchen. A small cupboard next to the bathroom was turned into a compact shower cubicle to make better use of the space.",
-        "We also added a new driveway to boost curb appeal—and as a bonus, enjoyed a great harvest from the apple tree in the garden before the property was sold!",
-      ]}
       sections={[
         {
-          title: "Investment Breakdown",
+          title: "Investment Strategy",
           lines: [
-            "Purchase price: £100,500",
-            "Fees and costs: £13,600",
-            "Refurbishment: £40,000",
-            "Total investment: £154,100",
+            "This tenanted property was purchased in 2022 as part of a larger portfolio acquisition. After reviewing the numbers, it became clear that the property was not suitable for a traditional buy-to-let strategy, so the decision was made to reposition the project as a flip instead.",
+            "- Purchase price: £100,500",
+            "- Fees and costs: £13,600",
           ],
           image: {
             src: assets_manager.kitchen_after_2,
@@ -38,18 +31,33 @@ const Drybridge = () => {
           layout: "image-right",
         },
         {
-          title: "Post-Refurbishment",
+          title: "Creating Value",
           lines: [
-            "Staging: £2,000",
-            "Cost of money: £4,500",
-            "Home Report: £195,000",
-            "Sold for: £205,000"
+            "To maximise the property’s value and improve the layout, a wall was removed to create a bright and modern open-plan kitchen space. A small cupboard next to the bathroom was also converted into a compact shower cubicle, making much better use of the available space and improving functionality. Aslo new driveway. ",
+            
+            "- Refurbishment: £40,000",
+            "- Total investment: £154,100",
+          ],
+          image: {
+            src: assets_manager.kitchen_after_2,
+            alt: "Kitchen after refurbishment",
+          },
+          layout: "image-left",
+        },
+        {
+          title: "Final Outcome",
+          lines: [
+            "the property was successfully prepared for resale as a more modern and desirable home. As a memorable bonus during the project, the apple tree in the garden provided an unexpectedly great harvest before the property was sold.",
+            "- Staging: £2,000",
+            "- Cost of money: £4,500",
+            "- Home Report: £195,000",
+            "- Sold for: £205,000"
           ],
           image: {
             src: assets_manager.case_studies_hero,
             alt: "Bedroom after refurbishment",
           },
-          layout: "image-left",
+          layout: "image-right",
         },
       ]}
 

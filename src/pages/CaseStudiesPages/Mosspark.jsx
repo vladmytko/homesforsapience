@@ -16,18 +16,19 @@ const Mosspark = () => {
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="A Sweet Turnaround – from Buy-to-Let to Flip"
-        intro={[
-          "This tenanted house was purchased in 2022 as part of a larger portfolio. When the numbers didn’t stack up for a traditional buy-to-let, we decided to go for a flip instead.",
-          "To add value, we removed a wall to create a bright and modern open-plan kitchen. A small cupboard next to the bathroom was turned into a compact shower cubicle to make better use of the space.",
-          "We also added a new driveway to boost curb appeal—and as a bonus, enjoyed a great harvest from the apple tree in the garden before the property was sold!",
-        ]}
+        // title="A Sweet Turnaround – from Buy-to-Let to Flip"
+        // intro={[
+        //   "This tenanted house was purchased in 2022 as part of a larger portfolio. When the numbers didn’t stack up for a traditional buy-to-let, we decided to go for a flip instead.",
+        //   "To add value, we removed a wall to create a bright and modern open-plan kitchen. A small cupboard next to the bathroom was turned into a compact shower cubicle to make better use of the space.",
+        //   "We also added a new driveway to boost curb appeal—and as a bonus, enjoyed a great harvest from the apple tree in the garden before the property was sold!",
+        // ]}
         sections={[
           {
-            title: "Investment Breakdown",
+            title: "Investment Strategy",
             lines: [
-              "Purchase price: £130,000",
-              "Refurbishment: £34,100",
+              "This tenanted property was purchased in 2022 as part of a larger portfolio. When the numbers didn’t work for a traditional buy-to-let, the strategy was changed to a flip instead.",
+              "- Purchase price: £130,000",
+              "- Refurbishment: £34,100",
               
             ],
             image: {
@@ -37,9 +38,11 @@ const Mosspark = () => {
             layout: "image-right",
           },
           {
-            title: "Post-Refurbishment",
+            title: "Creating Value",
             lines: [
-              "Total investment: £164,100",
+              "A wall was removed to create a bright open-plan kitchen, while a small cupboard next to the bathroom was converted into a compact shower cubicle to improve the layout.",
+              "A new driveway was also added to boost curb appeal before the property was sold.",
+              "- Total investment: £164,100",
               "Sold for: £227,000",
             ],
             image: {
@@ -47,6 +50,18 @@ const Mosspark = () => {
               alt: "Bedroom after refurbishment",
             },
             layout: "image-left",
+          },
+          {
+            title: "Creating Value",
+            lines: [
+              "Following the refurbishment, the property was successfully prepared for resale as a more modern and desirable home — with the added bonus of a great apple harvest from the garden before completion.",
+              "- Sold for: £227,000",
+            ],
+            image: {
+              src: mosspark_assets.mosspark_kitchen_2,
+              alt: "Bedroom after refurbishment",
+            },
+            layout: "image-right",
           },
         ]}
         beforeAfterGroups={[

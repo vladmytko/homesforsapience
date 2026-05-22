@@ -10,26 +10,18 @@ const DukeRoad = () => {
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Mosspark"
+        title="Duke Road"
         backgroundImage={duke_assets.livingroom_after}
         showConsultationButton={true}
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="A Sweet Turnaround – from Buy-to-Let to Flip"
-        intro={[
-          "This tenanted house was purchased in 2022 as part of a larger portfolio. When the numbers didn’t stack up for a traditional buy-to-let, we decided to go for a flip instead.",
-          "To add value, we removed a wall to create a bright and modern open-plan kitchen. A small cupboard next to the bathroom was turned into a compact shower cubicle to make better use of the space.",
-          "We also added a new driveway to boost curb appeal—and as a bonus, enjoyed a great harvest from the apple tree in the garden before the property was sold!",
-        ]}
         sections={[
           {
-            title: "Investment Breakdown",
+            title: "Initial Investment Strategy",
             lines: [
-              "Purchase price: Need to update",
-              "Fees and costs: Need to update",
-              "Refurbishment: Need to update",
-              "Total investment: Need to update",
+              "The property was originally planned as an assisted sale project, where the goal was to refurbish the house and help the owner sell it at full market value.",
+              "The refurbishment work was completed quickly, allowing the property to return to the market within just four weeks."
             ],
             image: {
               src: duke_assets.kitchen_after,
@@ -38,11 +30,10 @@ const DukeRoad = () => {
             layout: "image-right",
           },
           {
-            title: "Post-Refurbishment",
+            title: "Challenges During the Sale",
             lines: [
-              "Renovated market value: £80,000",
-              "Mortgage (75% LTV): £60,000",
-              "Equity created: £12,028",
+              "Despite multiple viewings and strong interest, the property remained unsold.",
+              "The main issue identified was the lack of parking directly in front of the house, which became a concern for potential buyers and affected the sale process."
             ],
             image: {
               src: duke_assets.bedroom_after,
@@ -51,15 +42,14 @@ const DukeRoad = () => {
             layout: "image-left",
           },
           {
-            title: "Rental Breakdown",
+            title: "Successful Outcome",
             lines: [
-              "Gross monthly rent: £525",
-              "Net monthly cashflow: £304",
-              "Net annually cashflow: £3,645",
+              "The property was rented out quickly and added to the investment portfolio at a discounted acquisition price, as refurbishment costs had already been invested into the project.",
+              "The property was successfully refinanced at the full market value of £120,000 just two months after purchase and now generates a rental income of £795 per month."
             ],
             image: {
-              src: duke_assets.bedroom_after2,
-              alt: "Bathroom after refurbishment",
+              src: duke_assets.livingroom_after,
+              alt: "Bedroom after refurbishment",
             },
             layout: "image-right",
           },

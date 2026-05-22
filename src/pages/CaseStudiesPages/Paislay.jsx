@@ -16,15 +16,11 @@ const Paislay = () => {
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="Buy to ley property"
-        intro={[
-          "Property was bought in heavily distressed condition it stays on market more than a year.",
-          "This 2 bedroom flat was refurbished throughout including installation of a new gas central heating, new carpets and brand new kitchen. Currently let for a long term."
-        ]}
         sections={[
           {
             title: "Investment Breakdown",
             lines: [
+              "This property was purchased in heavily distressed condition after remaining on the market for over a year, creating a strong value-add opportunity.",
               "Purchase price: £33,500",
               "Fees and costs: £2,468",
               "Refurbishment: £9,304",
@@ -39,8 +35,8 @@ const Paislay = () => {
           {
             title: "Post-Refurbishment",
             lines: [
+              "The 2-bedroom flat underwent a full refurbishment, including the installation of a new gas central heating system, brand new kitchen, new carpets, and complete redecoration throughout.",
               "Renovated market value: £55,000",
-              "Mortgage: 75%",
               "Total left in deal: £4,022",
               "Equity created: £9,728",
             ],
@@ -53,6 +49,7 @@ const Paislay = () => {
           {
             title: "Rental Breakdown",
             lines: [
+              "Following the renovation, the property was successfully let on a long-term basis and added as another strong buy-to-let investment to the portfolio.",
               "Gross monthly rent: £425",
               "Net monthly cashflow: £226",
               "Net annually cashflow: £2,712",

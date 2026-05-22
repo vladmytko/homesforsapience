@@ -16,20 +16,20 @@ const Turnberry = () => {
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-      title="Two bedroom cottage flat"
-      intro={[
-        "This 2 bedroom upper cottage flat was bought in distressed condition. This property gone through total redecoration with new kitchen, bathroom, landscaping.",
-        "It takes 2 months to complete refurbishment and dress this property for sale. This flat was sold within 6 days on the market. Thanks our team of investors and builders who make it possible!",
-      ]}
+      // title="Two bedroom cottage flat"
+      // intro={[
+      //   "This 2 bedroom upper cottage flat was bought in distressed condition. This property gone through total redecoration with new kitchen, bathroom, landscaping.",
+      //   "It takes 2 months to complete refurbishment and dress this property for sale. This flat was sold within 6 days on the market. Thanks our team of investors and builders who make it possible!",
+      // ]}
 
       sections={[
                 {
-                  title: "Investment Breakdown",
+                  title: "Property Transformation",
                   lines: [
-                    "Purchase price: £35,000",
-                    "Fees and costs: £1,500",
-                    "Refurbishment: £12,800",
-                    "Total investment: 49,300",
+                    "This 2-bedroom upper cottage flat was purchased in distressed condition and underwent a full refurbishment, including a new kitchen, modern bathroom, full redecoration, and landscaping improvements.",
+                    "- Purchase price: £35,000",
+                    "- Fees and costs: £1,500",
+                    
                   ],
                   image: {
                     src: assets_manager.turnberry_kitchen_after,
@@ -38,17 +38,31 @@ const Turnberry = () => {
                   layout: "image-right",
                 },
                 {
-                  title: "Post-Refurbishment",
+                  title: "Refurbishment Process",
                   lines: [
-                    "Selling cost: £2,100",
-                    "Sold for: £60,000",
-                    "Moderst profit: £6,100",
+                    "- The renovation was completed within two months, after which the property was professionally prepared and dressed for sale to maximise its market appeal.",
+                    "- Refurbishment: £12,800",
+                    "- Total investment: 49,300",
                   ],
                   image: {
                     src: assets_manager.turnberry_livingroom_after_3,
                     alt: "Bedroom after refurbishment",
                   },
                   layout: "image-left",
+                },
+                {
+                  title: "Successful Sale",
+                  lines: [
+                    "The property sold within just six days of being listed on the market — a fantastic result made possible through efficient project management and the support of a great team of investors and builders.",
+                    "- Selling cost: £2,100",
+                    "- Sold for: £60,000",
+                    "- Moderst profit: £6,100",
+                  ],
+                  image: {
+                    src: assets_manager.turnberry_bedroom_after_2,
+                    alt: "Bedroom after refurbishment",
+                  },
+                  layout: "image-right",
                 },
               ]}
 

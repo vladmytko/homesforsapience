@@ -16,25 +16,14 @@ const Newton = () => {
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="Buy-to-let with capital growth goal
-"
-        intro={[
-          "To add value, we installed full gas central heating. This involved arranging for SGN to bring the gas supply to the property, followed by boiler installation, fitting new radiators, and removing the existing storage heaters. One of the trickiest parts was finding an energy supplier willing to install a new gas meter sooner than the typical 3–4 month timeframe. In this case, I switched to British Gas, which allowed us to bring the connection date forward by almost two months.",
-          "We also created a downstairs toilet by converting a large cupboard, installed a new bathroom, and carried out the usual plastering and redecoration throughout.",
-          "Six months after purchase, the property was refinanced, resulting in another strong cash-flowing unit successfully added to the portfolio."
-        ]}
         sections={[
           {
-            title: "Investment Breakdown",
+            title: "Adding Value",
             lines: [
-
-//               Purchase £120000
-// Refurbishment £18000
-// Value after £185000
-// Rent is 1050
-              "Purchase price: £120,000",
-              "Refurbishment: £18,000",
-              "Total investment: £138,000",
+              "One of the key upgrades in this project was the installation of a full gas central heating system.",
+              "This involved coordinating with SGN to bring a new gas supply to the property, followed by the installation of a new boiler, radiators throughout the house, and the removal of the existing storage heaters.",
+              "One of the more challenging parts of the process was securing an energy supplier willing to install a gas meter sooner than the usual 3–4 month waiting period.",
+              "By switching to British Gas, the connection date was brought forward by almost two months, helping to keep the project moving efficiently."
             ],
             image: {
               src: newton_assets.bathroom_after2,
@@ -44,16 +33,34 @@ const Newton = () => {
           },
           
           {
-            title: "Post-Refurbishment",
+            title: "Interior Improvements",
             lines: [
-              "Renovated market value: £185,000",
-              "Rent: £1,050",
+              "To further increase the property’s value and practicality, a downstairs toilet was created by converting a large cupboard space.",
+              "The project also included the installation of a completely new bathroom, alongside full plastering and redecoration throughout the property.",
+              "These improvements significantly modernised the house and increased its appeal for future tenants."
             ],
             image: {
               src: newton_assets.kitchen_after,
               alt: "Livingroom after refurbishment",
             },
             layout: "image-left",
+          },
+
+          {
+            title: "Refinance & Investment Outcome",
+            lines: [
+              "Six months after purchase, the property was successfully refinanced and added as another strong cash-flowing unit within the portfolio.",
+              "Purchase Price: £120,000",
+              "Refurbishment: £18,000",
+              "Total Investment: £138,000",
+              "Renovated Market Value: £185,000",
+              "Monthly Rent: £1,050 pcm"
+            ],
+            image: {
+              src: newton_assets.livingroom_after2,
+              alt: "Livingroom after refurbishment",
+            },
+            layout: "image-right",
           },
         ]}
         beforeAfterGroups={[

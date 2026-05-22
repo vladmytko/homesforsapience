@@ -109,7 +109,7 @@ export const Navbar = () => {
                     fontWeight: (isActive && !link.neverActive) ? 700 : 500,
                   })}
                   onMouseEnter={(e) => {
-                    e.target.style.color = '#ffdedb'
+                    e.target.style.color = '#ffffff'
                     e.target.style.transform = 'translateY(-3px)'
                     e.target.style.opacity = '1'
                   }}
@@ -254,7 +254,7 @@ export const Navbar = () => {
                       display: 'inline-block',
                     })}
                     onMouseEnter={(e) => {
-                      e.target.style.color = '#ffe700'
+                      e.target.style.color = '#111111'
                       e.target.style.transform = 'translateY(-2px)'
                     }}
                     onMouseLeave={(e) => {

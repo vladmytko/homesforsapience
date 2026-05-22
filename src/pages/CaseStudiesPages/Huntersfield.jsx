@@ -24,10 +24,11 @@ return (
           {
             title: "Investment Breakdown",
             lines: [
-              "Purchase price: £41,000",
-              "Fees and costs: £2,854",
-              "Refurbishment: £13,450",
-              "Total investment: £57,304",
+              "This 3-bedroom cottage flat in Johnstone was purchased with the intention of a full renovation.",
+              "- Purchase price: £41,000",
+              "- Fees and costs: £2,854",
+              "- Refurbishment: £13,450",
+              "- Total investment: £57,304",
             ],
             image: {
               src: huntershield_assets.kitchen_after2,
@@ -38,10 +39,10 @@ return (
           {
             title: "Post-Refurbishment",
             lines: [
-              "Renovated market value: £56,000",
-              "Mortgage: 75%",
-              "Total left in deal: £15,304",
-              "Equity created: -£1,304",
+              "The project included a boiler replacement, new kitchen, new bathroom, electrical upgrades, and full redecoration throughout.",
+              "- Renovated market value: £56,000",
+              "- Total left in deal: £15,304",
+              "- Equity created: -£1,304",
             ],
             image: {
               src: huntershield_assets.bedroom1_after,
@@ -52,9 +53,10 @@ return (
           {
             title: "Rental Breakdown",
             lines: [
-              "Gross monthly rent: £500",
-              "Net monthly cashflow: £268",
-              "Net annually cashflow: £3,216",
+              "The property attracted strong interest from tenants and was successfully let before the refurbishment work had even been fully completed — highlighting the demand for well-presented rental properties in the area.",
+              "- Gross monthly rent: £500",
+              "- Net monthly cashflow: £268",
+              "- Net annually cashflow: £3,216",
             ],
             image: {
               src: huntershield_assets.lounge_after,

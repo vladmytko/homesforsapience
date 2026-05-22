@@ -16,19 +16,15 @@ const Netherhill = () => {
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="Buy to ley property"
-        intro={[
-          "This 2 bedroom ground floor flat located in Paisley Gallowhill. It is in really poor condition with some damp issues, boiler requiring replacement and general lack of care.",
-          "Refurbishment completed in September 2017. Tenanted from October 2017."
-        ]}
         sections={[
           {
             title: "Investment Breakdown",
             lines: [
-              "Purchase price: £32,000",
-              "Fees and costs: £1,394",
-              "Refurbishment: £9,319",
-              "Total investment: £42,713",
+              "This 2-bedroom ground floor flat in Paisley Gallowhill was purchased in very poor condition, with damp issues, an outdated boiler requiring replacement, and signs of general neglect throughout the property.",
+              "- Purchase price: £32,000",
+              "- Fees and costs: £1,394",
+              "- Refurbishment: £9,319",
+              "- Total investment: £42,713",
             ],
             image: {
               src: netherhill_assets.coridor_after,
@@ -39,10 +35,11 @@ const Netherhill = () => {
           {
             title: "Post-Refurbishment",
             lines: [
-              "Renovated market value: £55,000",
-              "Mortgage: 75%",
-              "Total left in deal: £1,463",
-              "Equity created: £12,287",
+              "The refurbishment was completed in September 2017, transforming the flat into a clean and modern rental property.",
+              "- Renovated market value: £55,000",
+              "- Mortgage: 75%",
+              "- Total left in deal: £1,463",
+              "- Equity created: £12,287",
             ],
             image: {
               src: netherhill_assets.livingroom_after,
@@ -53,9 +50,10 @@ const Netherhill = () => {
           {
             title: "Rental Breakdown",
             lines: [
-              "Gross monthly rent: £425",
-              "Net monthly cashflow: £235",
-              "Net annually cashflow: £2,820",
+              "The property was successfully tenanted from October 2017 onwards.",
+              "- Gross monthly rent: £425",
+              "- Net monthly cashflow: £235",
+              "- Net annually cashflow: £2,820",
             ],
             image: {
               src: netherhill_assets.kitchen_after,
