@@ -30,7 +30,7 @@ const CompanyIntro = () => {
         </div>
         <div className="mt-15">
           <Button
-            title="Shedule a Consult"
+            title="Shedule a Consultation"
             link={'/about'} 
           />
         </div>
