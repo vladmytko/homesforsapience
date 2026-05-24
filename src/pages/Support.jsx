@@ -14,7 +14,7 @@ const Support = () => {
     const consultancyPoints = [
     "We clearly define what you're looking for — whether it’s for living or investment, including budget, location, and key criteria.",
     "I handle sourcing properties, contacting agents, and arranging up to 20 viewings.",
-    "We spend one full day visiting properties together. During this day, I’ll show you: what to look for, how to access condition and potential and how to evaluate true marker value.",
+    "We spend one full day visiting properties together. During this day, I’ll show you: what to look for, how to assess condition and potential and how to evaluate true market value.",
     "After this, you continue viewings independently, equipped with the right knowledge and approach.",
     "Once you choose a property: I handle negotiations with the agent, help structure your offer, connect you with trusted brokers and solicitors if needed",
   ];
