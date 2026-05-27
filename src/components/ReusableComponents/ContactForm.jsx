@@ -50,7 +50,7 @@ const ContactForm = () => {
       className="w-full bg-(--color-bg-gray) overflow-hidden"
     >
       <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
-        <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-5">
+        <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl  mb-5">
           Any Questions?
         </h2>
 
