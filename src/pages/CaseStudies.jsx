@@ -109,10 +109,10 @@ const CaseStudies = () => {
                     {item.title}
                   </h3>
                   <div className="flex flex-wrap gap-2 text-xs sm:text-sm">
-                    <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
+                    <span className="bg-white/20 px-2 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
                       Purchase: {item.purchase}
                     </span>
-                    <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
+                    <span className="bg-white/20 px-2 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
                       Final Value: {item.finalValue}
                     </span>
                   </div>
