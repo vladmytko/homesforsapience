@@ -19,7 +19,7 @@ const Footer = () => {
                   class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
-                    class="w-9 h-9"
+                    className="w-9 h-9"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -37,7 +37,7 @@ const Footer = () => {
                   class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
-                    class="w-9 h-9"
+                    class="w-9 h-9"ßß
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"

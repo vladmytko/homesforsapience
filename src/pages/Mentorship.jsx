@@ -4,7 +4,7 @@ import { assets_manager } from "../assets/assets_manager";
 import TestimonialsSection from "../components/HomePageComponents/HomeTestimonials/TestimonialSection";
 import Footer from "../components/ReusableComponents/Footer";
 import ContactForm from "../components/ReusableComponents/ContactForm";
-import ServiceCards from "../components/ReusableComponents/ServiceCards";
+import CoachingServiceCard from "../components/ReusableComponents/CoachingServiceCard"
 
 const Mentorship = () => {
   return (
@@ -16,7 +16,7 @@ const Mentorship = () => {
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
-            Mentorship
+            Coaching
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -87,7 +87,7 @@ const Mentorship = () => {
         </div>
       </div>
 
-      <ServiceCards />
+      <CoachingServiceCard />
       <TestimonialsSection />
       <ContactForm />
       <Footer />

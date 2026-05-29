@@ -1,6 +1,6 @@
 import React from "react";
 
-const SupportServiceCards = () => {
+const CoachingServiceCard = () => {
   return (
     <section
       id="free-call"
@@ -12,7 +12,6 @@ const SupportServiceCards = () => {
         </h2>
 
         <div className="px-5">
-
           <p className="text-base sm:text-xl my-5 text-gray-900">
             If you have questions about property investment or would like to
             understand how I can help you, you can start with a free 15-minute
@@ -20,18 +19,16 @@ const SupportServiceCards = () => {
           </p>
 
           <p className="text-base sm:text-xl my-5 text-gray-900">
-            Property Buying Support — £500. This service includes personalised
-            support during the property buying process, including:
+            £250 per month. Coaching service includes two one-hour calls per month, with recordings provided after each session.
           </p>
 
-          <div className="text-base sm:text-xl my-5 mb-10 text-gray-900">
-            <ul className="list-disc pl-5 space-y-1">
-              <li>one full day of property viewings</li>
-              <li>assistance evaluating potential properties</li>
-              <li>negotiation support with estate agencies</li>
-              <li>practical guidance throughout the process</li>
-            </ul>
-          </div>
+          <p className="text-base sm:text-xl my-5 text-gray-900">
+            It is designed for individuals who want a deeper understanding of property investment processes and strategies, rather than simply finding a quick solution to a specific situation. 
+          </p>
+
+          <p className="text-base sm:text-xl my-5 text-gray-900">
+            The focus is on building long-term knowledge, confidence, and decision-making skills through personalised guidance and ongoing support.
+          </p>
 
           <p className="text-base sm:text-xl my-5 text-gray-900 mb-10">
             The free introductory call allows us to discuss your goals and
@@ -60,4 +57,4 @@ const SupportServiceCards = () => {
   );
 };
 
-export default SupportServiceCards;
+export default CoachingServiceCard;

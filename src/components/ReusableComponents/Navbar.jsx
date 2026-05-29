@@ -9,7 +9,7 @@ export const Navbar = () => {
     { label: 'Home', path: '/' },
     { label: 'Consultation', path: '/consultation' },
     { label: 'Support', path: '/support' },
-    { label: 'Mentorship', path: '/mentorship' },
+    { label: 'Coaching', path: '/coaching' },
     { label: 'About Us', path: '/about' },
     { label: 'Projects', path: '/case-studies' },
     { label: 'Testimonials', path: '/testimonials' },
