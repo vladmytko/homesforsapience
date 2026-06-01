@@ -32,7 +32,7 @@ const About = () => {
               {/* Left SIDE - Text */}
 
               <div className="lg:w-1/2 order-2 lg:order-1 flex flex-col text-base sm:text-xl">
-                <div className="space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+                <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     My name is Timur Khismatullin. I moved to Scotland in 2010
                     and began my journey in property in 2016. That same year, I
@@ -74,7 +74,7 @@ const About = () => {
               {/* RIGHT SIDE - Text */}
 
               <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
-                <div className="space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+                <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     Today, I continue to invest personally while also helping
                     others — sharing my experience, explaining how to assess a
@@ -89,11 +89,19 @@ const About = () => {
                     property, I’d be delighted to meet you — and I’m here to
                     help.
                   </p>
+
+                  <div className="py-5">
+                    <a
+                      href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3VUVI7gY4gj6XKTDQAZpTHjVGAurynnmuIEAPN_xwhdFP4cXyAfPxVPOPpEVVe45cvCKDrRPfP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
+                    >
+                      Book Free Call
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="py-10">
-              <Button title="Book Free Call" link={"/consultation#free-call"} />
             </div>
           </div>
         </div>

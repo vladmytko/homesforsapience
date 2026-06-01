@@ -31,7 +31,7 @@ const CompanyIntro = () => {
         <div className="mt-15">
           <Button
             title="Shedule a Consultation"
-            link={'/about'} 
+            link={'/consultation'} 
           />
         </div>
       </div>

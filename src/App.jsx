@@ -45,9 +45,9 @@ const App = () => {
         <Route path="/case-studies/turnberry" element={<Turnberry />} />
         <Route path="/case-studies/mosspark" element={<Mosspark />} />
         <Route path="/case-studies/huntersfield" element={<Huntersfield />} />
-        <Route path="/case-studies/duke-road" element={<DukeRoad />} />
+        <Route path="/case-studies/dyke-road" element={<DukeRoad />} />
         <Route path="/case-studies/charles-avenue" element={<Charles />} />
-        <Route path="/case-studies/paislay-road" element={<Paislay />} />
+        <Route path="/case-studies/paisley-road" element={<Paislay />} />
         <Route path="/case-studies/netherhill-road" element={<Netherhill />} />
         <Route path="/case-studies/newton" element={<Newton />} />
         <Route path="/blog" element={<Blog />} />

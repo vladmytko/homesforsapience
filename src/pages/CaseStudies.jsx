@@ -40,11 +40,11 @@ const caseStudiesList = [
   },
   {
     id: 5,
-    title: "Duke Road",
+    title: "Dyke Road",
     purchase: "£60,000",
     finalValue: "£120,000",
     image: assets_manager.dykeRoadImage,
-    slug: "duke-road",
+    slug: "dyke-road",
   },
   {
     id: 6,
@@ -56,11 +56,11 @@ const caseStudiesList = [
   },
   {
     id: 7,
-    title: "Paislay Road",
+    title: "Paisley Road",
     purchase: "£33,500",
     finalValue: "£55,000",
     image: assets_manager.payslayImage,
-    slug: "paislay-road",
+    slug: "paisley-road",
   },
   {
     id: 8,

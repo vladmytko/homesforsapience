@@ -1,4 +1,5 @@
 import React from "react";
+import { assets_manager } from "../../assets/assets_manager";
 
 const SupportServiceCards = () => {
   return (
@@ -26,10 +27,22 @@ const SupportServiceCards = () => {
 
           <div className="text-base sm:text-xl my-5 mb-10 text-gray-900">
             <ul className="list-disc pl-5 space-y-1">
-              <li>one full day of property viewings</li>
-              <li>assistance evaluating potential properties</li>
-              <li>negotiation support with estate agencies</li>
-              <li>practical guidance throughout the process</li>
+              <li className="flex items-start gap-2">
+                <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                <span>one full day of property viewings</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                <span>assistance evaluating potential properties</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                <span>negotiation support with estate agencies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                <span>practical guidance throughout the process</span>
+              </li>
             </ul>
           </div>
 

@@ -57,7 +57,7 @@ const HomeCaseStudies = () => {
           </div>
         </div>
         <div className="mt-11 pb-4 items-center text-center">
-          <Button title="Explore Case Studies" link="/case-studies" />
+          <Button title="Explore Projects" link="/case-studies" />
         </div>
       </div>
     </section>

@@ -14,6 +14,8 @@ import podcase_image from './podcase_image.webp'
 import fundraiser_image from './fundraiser_image.webp'
 import support_image from './support.jpg'
 import google_logo from './google_logo.webp'
+import presentation_image from './presentation.jpeg'
+import tick_small from './tick_logo.png'
 
 // Case Studies Grid Images
 import drybridgeImage from '../assets/case_studies_images/home_page_case_stydies_images/drybridge.jpeg'
@@ -83,6 +85,8 @@ export const assets_manager = {
   fundraiser_image,
   support_image,
   google_logo,
+  presentation_image,
+  tick_small,
 
   // Case Studies Grid Images
   drybridgeImage,

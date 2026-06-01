@@ -5,7 +5,7 @@ const renderTextBlock = (title, lines = []) => (
     {title ? <h2 className="m-0 text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight text-[#1f1f1f]">{title}</h2> : null}
     <div className="mt-3">
       {lines.map((line, index) => (
-        <p key={`${title || 'text'}-${index}`} className="my-5 leading-7 text-[#1f1f1f]">
+        <p key={`${title || 'text'}-${index}`} className="my-5 leading-7 text-[#1f1f1f] text-lg pl-2">
           {line}
         </p>
       ))}

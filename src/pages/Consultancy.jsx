@@ -93,7 +93,7 @@ const Consultancy = () => {
               {/* RIGHT SIDE - Text */}
 
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-base sm:text-xl">
-                <div className="space-y-1 sm:space-y-4 text-gray-700 flex flex-col flex-1 gap-4">
+                <div className="space-y-1 sm:space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     If you are not yet ready for full coaching but want
                     professional direction, a one-hour consultation is the
@@ -154,7 +154,7 @@ const Consultancy = () => {
                 />
                 <div className="flex flex-col">
                   <span className="text-xl sm:text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
-                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-400">
+                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-500">
                   {point}
                 </span>
                 </div>

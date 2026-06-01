@@ -10,7 +10,7 @@ const Paislay = () => {
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Paislay Road"
+        title="Paisley Road"
         backgroundImage={paislay_assets.kitchen_after}
         showConsultationButton={true}
         showAboutButton={true}

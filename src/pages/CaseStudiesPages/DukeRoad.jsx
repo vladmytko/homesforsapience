@@ -10,7 +10,7 @@ const DukeRoad = () => {
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Duke Road"
+        title="Dyke Road"
         backgroundImage={duke_assets.livingroom_after}
         showConsultationButton={true}
         showAboutButton={true}

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { assets_manager } from "../../assets/assets_manager";
 
 const ServiceCards = () => {
   return (
@@ -22,11 +23,23 @@ const ServiceCards = () => {
                 Personal Consultation
               </h3>
 
-              <ul className="list-disc space-y-3 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
-                <li>clear direction</li>
-                <li>realistic next steps</li>
-                <li>improved understanding of risks and opportunities</li>
-                <li>greater confidence in your decisions</li>
+              <ul className="list-disc space-y-4 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
+                <li className="flex items-start gap-2">
+                   <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                   <span>clear direction</span>
+                </li>
+                <li className="flex items-start gap-2">
+                   <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                   <span>realistic next steps</span>
+                </li>
+                <li className="flex items-start gap-2">
+                   <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                   <span>improved understanding of risks and opportunities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                   <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+                   <span>greater confidence in your decisions</span>
+                </li>
               </ul>
 
               <p className="text-(--color-text-dark) text-3xl md:text-4xl font-medium mt-14 mb-10">
@@ -61,14 +74,24 @@ const ServiceCards = () => {
                   <p className="mb-2">
                     This is an informal conversation where we can:
                   </p>
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>discuss your goals</li>
-                    <li>clarify your current situation</li>
-                    <li>
-                      explain how coaching or consultation could support you
-                    </li>
-                    <li>answer any initial questions</li>
-                  </ul>
+           <ul className="space-y-2">
+             <li className="flex items-start gap-2">
+               <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+               <span>discuss your goals</span>
+             </li>
+             <li className="flex items-start gap-2">
+               <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+               <span>clarify your current situation</span>
+             </li>
+             <li className="flex items-start gap-2">
+               <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+               <span>explain how coaching or consultation could support you</span>
+             </li>
+             <li className="flex items-start gap-2">
+               <img src={assets_manager.tick_small} alt="" className="w-6 h-6 mt-0.5" />
+               <span>answer any initial questions</span>
+             </li>
+           </ul>
                 </div>
               </div>
 

@@ -75,7 +75,7 @@ const Support = () => {
               {/* RIGHT SIDE - Text */}
 
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-xl">
-                <div className="space-y-4 text-base sm:text-xl text-gray-700 flex flex-col flex-1 gap-4 mt-10">
+                <div className="space-y-4 text-base sm:text-xl text-gray-900 flex flex-col flex-1 gap-4 mt-10">
                   <p className="leading-relaxed">
                     Guide through the full buying journey — from defining your criteria to negotiating with agents. 
 
@@ -122,7 +122,7 @@ const Support = () => {
                 />
                 <div className="flex flex-col">
                   <span className="text-xl sm:text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
-                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-400">
+                  <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-500">
                   {point}
                 </span>
                 </div>

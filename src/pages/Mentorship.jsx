@@ -34,7 +34,7 @@ const Mentorship = () => {
               {/* RIGHT SIDE - Text */}
 
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-xl">
-                <div className="space-y-4 text-base sm:text-xl text-gray-700 flex flex-col flex-1 gap-4">
+                <div className="space-y-4 text-base sm:text-xl text-gray-900 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
                     With nearly a decade of hands-on experience in the UK
                     property market — across sourcing, mortgages, renovation,
