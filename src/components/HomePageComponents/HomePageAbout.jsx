@@ -4,10 +4,10 @@ import Button from "../ReusableComponents/Button";
 
 
 const stats = [
-  { value: 10, suffix: "+", label: "years of experience"},
-  { value: 50, suffix: "+", label: "properties purchased"},
-  { value: 120, suffix: "+", label: "happy clients"},
-  { value: 200, suffix: "+", label: "properties analysed"},
+  { value: 12, suffix: "+", label: "years of experience" },
+  { value: 50, suffix: "+", label: "property deals completed" },
+  { value: 100, suffix: "+", label: "happy clients" },
+  { value: 500, suffix: "+", label: "properties analysed" },
 ];
 
 const AnimatedNumber = ({ value, suffix = "", duration = 1800, start, delay = 0 }) => {
