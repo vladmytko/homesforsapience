@@ -65,8 +65,9 @@ import turnberry_livingroom_after from "./case_studies_images/turnberry_images/t
 import turnberry_livingroom_before from "./case_studies_images/turnberry_images/turnberry_livingroom_before.webp"
 import turnberry_livingroom_after_3 from "./case_studies_images/turnberry_images/turnberry_livingroom_after_3.jpg"
 import turnberry_garden_before from "./case_studies_images/turnberry_images/turnberry_garden_before.jpeg"
+import webinar_image from "./webinar.jpeg"
 
-// Mosspark
+
 
 export const assets_manager = {
   logo,
@@ -87,6 +88,7 @@ export const assets_manager = {
   google_logo,
   presentation_image,
   tick_small,
+  webinar_image,
 
   // Case Studies Grid Images
   drybridgeImage,

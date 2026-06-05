@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/ReusableComponents/Navbar";
 import { assets_manager } from "../assets/assets_manager";
 import Footer from "../components/ReusableComponents/Footer";
 import Button from "../components/ReusableComponents/Button";
 
 const Blog = () => {
+  const [showFullWebinar, setShowFullWebinar] = useState(false);
   return (
     <section>
       <Navbar />
@@ -17,7 +18,117 @@ const Blog = () => {
             Blog
           </h2>
 
-          <div className="justify-center space-y-15">
+          <div className="justify-center space-y-15 md:space-y-3">
+            <div className="flex flex-col lg:flex-row lg:gap-10 sm:py-10">
+              {/** Left Side - Image */}
+              <div className=" order-2 lg:order-1">
+                <div className="relative h-auto w-auto max-w-140 rounded mt-2 sm:mt-0">
+                  <img
+                    src={assets_manager.webinar_image}
+                    alt="Founder"
+                    className="w-full h-full rounded"
+                  />
+                </div>
+              </div>
+
+              {/* RIGHT SIDE - Text */}
+
+              <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
+                <div
+                  className={`flex flex-col flex-1 gap-4 overflow-hidden transition-all duration-300 ${
+                    showFullWebinar ? "max-h-500" : "max-h-90"
+                  }`}
+                >
+                  <p className="leading-relaxed text-2xl sm:text-3xl">
+                    WEBINAR: Private Investors in Property (in Russian)
+                  </p>
+
+                  <p className="text-gray-700">17 June 2026</p>
+
+                  <p className="leading-relaxed">
+                    Looking to buy a property but don’t have enough capital?
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Over the past few years, I have raised more than £1 million
+                    from private investors to finance property projects across
+                    the UK. In this webinar, I’ll share the practical system
+                    that I personally use.
+                  </p>
+
+                  <p className="leading-relaxed">What you’ll learn:</p>
+
+                  <ul className="list-disc space-y-4 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Where to find private investors</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>How to build trust and credibility</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>
+                        How to present property deals effectively
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Which numbers matter most to investors</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>How to structure funding and investment deals</span>
+                    </li>
+                  </ul>
+
+                  <p className="leading-relaxed">
+                    This webinar is suitable for both new property investors and those looking to scale their existing property portfolio.
+                  </p>
+
+                  <p className="leading-relaxed">A recording of the webinar will be available to all registered participants.</p>
+
+                  <div className="mb-5 py-3 sm:py-5">
+                    <a
+                      href="https://buy.stripe.com/28E7sEcWW4t2ffJ4kF83C00"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
+                    >
+                      Registration
+                    </a>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowFullWebinar(!showFullWebinar)}
+                  className="mt-4 text-(--color-button-primary) font-medium text-left cursor-pointer hover:text-amber-500"
+                >
+                  {showFullWebinar ? "Show Less ▲" : "Read More ▼"}
+                </button>
+              </div>
+            </div>
+
             <div className="flex flex-col lg:flex-row lg:gap-10 sm:py-10">
               {/** Left Side - Image */}
               <div className=" order-2 lg:order-1">
@@ -48,7 +159,8 @@ const Blog = () => {
                   </p>
 
                   <p className="leading-relaxed">
-                    Complete the short registration form and a presentation link will be sent to you shortly after submission.
+                    Complete the short registration form and a presentation link
+                    will be sent to you shortly after submission.
                   </p>
 
                   <div className="mb-5 py-3 sm:py-5">
@@ -58,7 +170,7 @@ const Blog = () => {
                       rel="noopener noreferrer"
                       className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
                     >
-                      Registration
+                      Recording
                     </a>
                   </div>
                 </div>
@@ -100,7 +212,7 @@ const Blog = () => {
                       href="https://www.youtube.com/watch?v=-7_rtzFW8DE&t=490s"
                       target="_blank"
                       rel="noopener noreferrer"
-                     className="bg-white border-3 border-red-800 text-red-800 px-8 py-4 rounded-full hover:bg-red-800 hover:text-white transition-colors duration-300 font-medium"
+                      className="bg-white border-3 border-red-800 text-red-800 px-8 py-4 rounded-full hover:bg-red-800 hover:text-white transition-colors duration-300 font-medium"
                     >
                       YouTube
                     </a>
@@ -109,7 +221,7 @@ const Blog = () => {
                       href="https://creators.spotify.com/pod/profile/scottish-property-podcast5/episodes/Russian-scholar-turned-Glasgow-investor-with-Timur-Khismatullin-e2k4qog"
                       target="_blank"
                       rel="noopener noreferrer"
-                     className="ml-2 border-3 border-green-600 bg-white text-green-600 px-8 py-4 rounded-full hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium"
+                      className="ml-2 border-3 border-green-600 bg-white text-green-600 px-8 py-4 rounded-full hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium"
                     >
                       Spotify
                     </a>
