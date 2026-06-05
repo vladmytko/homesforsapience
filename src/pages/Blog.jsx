@@ -111,6 +111,83 @@ const Blog = () => {
 
                   <p className="leading-relaxed">A recording of the webinar will be available to all registered participants.</p>
 
+
+
+                  {/** In runssion version */}
+
+                  <p className="leading-relaxed text-2xl sm:text-3xl">
+                    ВЕБИНАР: Частные инвесторы в недвижимость (на русском языке)
+                  </p>
+
+                  <p className="text-gray-900 font-semibold">Дата: 17 June 2026</p>
+                  <p className="text-gray-900 font-semibold">Время: 7:00 PM (UK time)</p>
+                  <p className="text-gray-900 font-semibold">Цена: £15</p>
+
+                  <p className="leading-relaxed">
+                    Хотите купить объект, но не хватает собственных средств?
+                  </p>
+
+                  <p className="leading-relaxed">
+                    За последние годы я привлёк более £1 миллиона от частных инвесторов для финансирования проектов недвижимости в Великобритании. На этом вебинаре я поделюсь практической системой, которую использую сам.
+
+                  </p>
+
+                  <p className="leading-relaxed">Вы узнаете:</p>
+
+                  <ul className="list-disc space-y-4 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Где искать частных инвесторов</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Как выстраивать доверие</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>
+                        Как презентовать проекты
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Какие цифры важны для инвестора</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <img
+                        src={assets_manager.tick_small}
+                        alt=""
+                        className="w-6 h-6 mt-0.5"
+                      />
+                      <span>Как структурировать финансирование и сделки</span>
+                    </li>
+                  </ul>
+
+                  <p className="leading-relaxed">
+                    Вебинар будет полезен как начинающим инвесторам, так и тем, кто хочет масштабировать существующий портфель недвижимости.
+
+                  </p>
+
+                  <p className="leading-relaxed">Запись вебинара будет доступна всем зарегистрированным участникам.</p>
+
+                  {/** End runssion version */}
+
                   <div className="mb-5 py-3 sm:py-5">
                     <a
                       href="https://buy.stripe.com/28E7sEcWW4t2ffJ4kF83C00"
