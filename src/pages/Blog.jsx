@@ -43,7 +43,9 @@ const Blog = () => {
                     WEBINAR: Private Investors in Property (in Russian)
                   </p>
 
-                  <p className="text-gray-700">17 June 2026</p>
+                  <p className="text-gray-900 font-semibold">Date: 17 June 2026</p>
+                  <p className="text-gray-900 font-semibold">Time: 7:00 PM (UK time)</p>
+                  <p className="text-gray-900 font-semibold">Price: £15</p>
 
                   <p className="leading-relaxed">
                     Looking to buy a property but don’t have enough capital?
