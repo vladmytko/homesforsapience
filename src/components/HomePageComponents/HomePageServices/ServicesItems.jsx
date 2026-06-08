@@ -11,8 +11,8 @@ export const ServicesItems = [
 
   {
     id: 2,
-    title: "Mentorship",
-    link: "/mentorship",
+    title: "Coaching",
+    link: "/coaching",
     description: [
       "One-to-one mentoring programme is designed to guide you through every step of the process.",
       "Whether you’re preparing for your first purchase or you’re an experienced investor looking to scale.",
