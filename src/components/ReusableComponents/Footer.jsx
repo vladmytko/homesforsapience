@@ -71,7 +71,7 @@ const Footer = () => {
                   to="/case-studies"
                   class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Case Studies
+                  Projects
                 </Link>
               </li>
 
@@ -103,10 +103,10 @@ const Footer = () => {
 
               <li>
                 <Link
-                  to="/mentorship"
+                  to="/coaching"
                   class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Mentorship
+                  Coaching
                 </Link>
               </li>
 
@@ -138,25 +138,21 @@ const Footer = () => {
               </li>
 
               <li>
-                <a
-                  href="#"
-                  title=""
+                <Link
+                  to="/privacy-policy"
                   class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  {" "}
-                  Privacy Policy{" "}
-                </a>
+                  Privacy Policy
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
-                  title=""
+                <Link
+                  to="/terms-conditions"
                   class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  {" "}
-                  Terms & Conditions{" "}
-                </a>
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>

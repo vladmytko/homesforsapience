@@ -17,6 +17,8 @@ import Newton from "./pages/CaseStudiesPages/Newton";
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
 import Support from "./pages/Support";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/Terms&Conditions";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -51,6 +53,8 @@ const App = () => {
         <Route path="/case-studies/netherhill-road" element={<Netherhill />} />
         <Route path="/case-studies/newton" element={<Newton />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
         <Route path="*" element={<Navigate to="/" replace/>} />
       </Routes>
     </>
