@@ -196,7 +196,7 @@ const ContactForm = () => {
                       By submitting this form, you agree to be contacted
                       regarding your enquiry. Your details will not be shared.
                       Check{" "}
-                      <a href="/privacypolicy" className="hover:underline">
+                      <a href="/privacy-policy" className="hover:underline">
                         Privacy Policy
                       </a>
                     </span>
