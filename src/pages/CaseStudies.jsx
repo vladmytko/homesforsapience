@@ -34,7 +34,7 @@ const caseStudiesList = [
     id: 4,
     title: "Huntersfield",
     purchase: "£41,000",
-    finalValue: "£120,000",
+    finalValue: "£70,000",
     image: assets_manager.huntersfieldImage,
     slug: "huntersfield",
   },
