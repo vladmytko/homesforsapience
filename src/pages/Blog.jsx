@@ -3,9 +3,14 @@ import Navbar from "../components/ReusableComponents/Navbar";
 import { assets_manager } from "../assets/assets_manager";
 import Footer from "../components/ReusableComponents/Footer";
 import Button from "../components/ReusableComponents/Button";
+import { useLanguage } from "../context/LanguageContext";
 
 const Blog = () => {
   const [showFullWebinar, setShowFullWebinar] = useState(false);
+  const { t } = useLanguage();
+  const content = t.blog;
+
+
   return (
     <section>
       <Navbar />
@@ -15,7 +20,7 @@ const Blog = () => {
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-10 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-3xl sm:text-4xl lg:text-5xl mb-5">
-            Blog
+            {content.title}
           </h2>
 
           <div className="justify-center space-y-15 md:space-y-3">
@@ -40,25 +45,22 @@ const Blog = () => {
                   }`}
                 >
                   <p className="leading-relaxed text-2xl sm:text-3xl">
-                    WEBINAR: Private Investors in Property (in Russian)
+                    {content.webinar2.title}
                   </p>
 
-                  <p className="text-gray-900 font-semibold">Date: 17 June 2026</p>
-                  <p className="text-gray-900 font-semibold">Time: 7:00 PM (UK time)</p>
-                  <p className="text-gray-900 font-semibold">Price: £15</p>
+                  {/* <p className="text-gray-900 font-semibold">{content.webinar2.date}</p>
+                  <p className="text-gray-900 font-semibold">{content.webinar2.time}</p> */}
+                  <p className="text-gray-900 font-semibold">{content.webinar2.price}</p>
 
                   <p className="leading-relaxed">
-                    Looking to buy a property but don’t have enough capital?
+                    {content.webinar2.paragraph1}
                   </p>
 
                   <p className="leading-relaxed">
-                    Over the past few years, I have raised more than £1 million
-                    from private investors to finance property projects across
-                    the UK. In this webinar, I’ll share the practical system
-                    that I personally use.
+                    {content.webinar2.paragraph2}
                   </p>
 
-                  <p className="leading-relaxed">What you’ll learn:</p>
+                  <p className="leading-relaxed">{content.webinar2.pointStart}</p>
 
                   <ul className="list-disc space-y-4 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
                     <li className="flex items-start gap-2">
@@ -67,7 +69,7 @@ const Blog = () => {
                         alt=""
                         className="w-6 h-6 mt-0.5"
                       />
-                      <span>Where to find private investors</span>
+                      <span>{content.webinar2.point1}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <img
@@ -75,81 +77,7 @@ const Blog = () => {
                         alt=""
                         className="w-6 h-6 mt-0.5"
                       />
-                      <span>How to build trust and credibility</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <img
-                        src={assets_manager.tick_small}
-                        alt=""
-                        className="w-6 h-6 mt-0.5"
-                      />
-                      <span>
-                        How to present property deals effectively
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <img
-                        src={assets_manager.tick_small}
-                        alt=""
-                        className="w-6 h-6 mt-0.5"
-                      />
-                      <span>Which numbers matter most to investors</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <img
-                        src={assets_manager.tick_small}
-                        alt=""
-                        className="w-6 h-6 mt-0.5"
-                      />
-                      <span>How to structure funding and investment deals</span>
-                    </li>
-                  </ul>
-
-                  <p className="leading-relaxed">
-                    This webinar is suitable for both new property investors and those looking to scale their existing property portfolio.
-                  </p>
-
-                  <p className="leading-relaxed">A recording of the webinar will be available to all registered participants.</p>
-
-
-
-                  {/** In runssion version */}
-
-                  <p className="leading-relaxed text-2xl sm:text-3xl">
-                    ВЕБИНАР: Частные инвесторы в недвижимость (на русском языке)
-                  </p>
-
-                  <p className="text-gray-900 font-semibold">Дата: 17 June 2026</p>
-                  <p className="text-gray-900 font-semibold">Время: 7:00 PM (UK time)</p>
-                  <p className="text-gray-900 font-semibold">Цена: £15</p>
-
-                  <p className="leading-relaxed">
-                    Хотите купить объект, но не хватает собственных средств?
-                  </p>
-
-                  <p className="leading-relaxed">
-                    За последние годы я привлёк более £1 миллиона от частных инвесторов для финансирования проектов недвижимости в Великобритании. На этом вебинаре я поделюсь практической системой, которую использую сам.
-
-                  </p>
-
-                  <p className="leading-relaxed">Вы узнаете:</p>
-
-                  <ul className="list-disc space-y-4 text-(--color-text-dark) text-base sm:text-lg leading-relaxed lg:p-3">
-                    <li className="flex items-start gap-2">
-                      <img
-                        src={assets_manager.tick_small}
-                        alt=""
-                        className="w-6 h-6 mt-0.5"
-                      />
-                      <span>Где искать частных инвесторов</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <img
-                        src={assets_manager.tick_small}
-                        alt=""
-                        className="w-6 h-6 mt-0.5"
-                      />
-                      <span>Как выстраивать доверие</span>
+                      <span>{content.webinar2.point2}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <img
@@ -158,7 +86,7 @@ const Blog = () => {
                         className="w-6 h-6 mt-0.5"
                       />
                       <span>
-                        Как презентовать проекты
+                        {content.webinar2.point1}{content.webinar2.point3}
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -167,7 +95,7 @@ const Blog = () => {
                         alt=""
                         className="w-6 h-6 mt-0.5"
                       />
-                      <span>Какие цифры важны для инвестора</span>
+                      <span>{content.webinar2.point4}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <img
@@ -175,18 +103,15 @@ const Blog = () => {
                         alt=""
                         className="w-6 h-6 mt-0.5"
                       />
-                      <span>Как структурировать финансирование и сделки</span>
+                      <span>{content.webinar2.point5}</span>
                     </li>
                   </ul>
 
                   <p className="leading-relaxed">
-                    Вебинар будет полезен как начинающим инвесторам, так и тем, кто хочет масштабировать существующий портфель недвижимости.
-
+                    {content.webinar2.paragraph3}
                   </p>
 
-                  <p className="leading-relaxed">Запись вебинара будет доступна всем зарегистрированным участникам.</p>
-
-                  {/** End runssion version */}
+                  <p className="leading-relaxed">{content.webinar2.paragraph4}</p>
 
                   <div className="mb-5 py-3 sm:py-5">
                     <a
@@ -195,7 +120,7 @@ const Blog = () => {
                       rel="noopener noreferrer"
                       className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
                     >
-                      Registration
+                      {content.webinar2.button}
                     </a>
                   </div>
                 </div>
@@ -203,7 +128,7 @@ const Blog = () => {
                   onClick={() => setShowFullWebinar(!showFullWebinar)}
                   className="mt-4 text-(--color-button-primary) font-medium text-left cursor-pointer hover:text-amber-500"
                 >
-                  {showFullWebinar ? "Show Less ▲" : "Read More ▼"}
+                  {showFullWebinar ? content.webinar2.showLess : content.webinar2.showMore}
                 </button>
               </div>
             </div>
@@ -225,21 +150,17 @@ const Blog = () => {
               <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
                 <div className="flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed text-2xl sm:text-3xl">
-                    Property Investments in Scotland (Free)
+                    {content.webinar1.title}
                   </p>
 
-                  <p className="text-gray-700">29 Feb 2026</p>
+                  <p className="text-gray-700">{content.webinar1.date}</p>
 
                   <p className="leading-relaxed">
-                    On the market: £58,000. Purchased for: £33,500. Feel the
-                    difference. A professional investor doesn’t wait for
-                    opportunities — they create them. It isn’t luck. It’s a
-                    skill. And skills can be learned.
+                    {content.webinar1.paragraph1}
                   </p>
 
                   <p className="leading-relaxed">
-                    Complete the short registration form and a presentation link
-                    will be sent to you shortly after submission.
+                    {content.webinar1.paragraph2}
                   </p>
 
                   <div className="mb-5 py-3 sm:py-5">
@@ -249,7 +170,7 @@ const Blog = () => {
                       rel="noopener noreferrer"
                       className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
                     >
-                      Recording
+                      {content.webinar1.button}
                     </a>
                   </div>
                 </div>
@@ -273,17 +194,13 @@ const Blog = () => {
               <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
                 <div className="space-y-2 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed text-2xl sm:text-3xl">
-                    The Scottish Property Podcast
+                    {content.podcast.title}
                   </p>
 
-                  <p className="text-gray-700">25 Mar 2024</p>
+                  <p className="text-gray-700">{content.podcast.date}</p>
 
                   <p className="leading-relaxed">
-                    A weekly podcast focused on keeping property investors
-                    informed and educated on the Scottish property market.
-                    Co-hosts Nick Ponty and Steven Clark share their own
-                    experiences, answer questions and talk to experts in the
-                    industry.
+                    {content.podcast.paragraph}
                   </p>
 
                   <div className="mb-5 sm:mb-0 sm:py-10">
@@ -326,14 +243,13 @@ const Blog = () => {
               <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
                 <div className="space-y-3 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed text-2xl sm:text-3xl">
-                    Fundraiser for The Prince & Princess of Wales Hospice
+                    {content.fundraiser.title}
                   </p>
 
-                  <p className="text-gray-700">23 Aug 2025</p>
+                  <p className="text-gray-700">{content.fundraiser.date}</p>
 
                   <p className="leading-relaxed">
-                    Help Timur Khismatulin raise money to support The Prince &
-                    Princes of Wales Hospice.
+                    {content.fundraiser.paragraph}
                   </p>
 
                   <div className="mb-7">
@@ -343,7 +259,7 @@ const Blog = () => {
                       rel="noopener noreferrer"
                       className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
                     >
-                      Read More
+                      {content.fundraiser.button}
                     </a>
                   </div>
                 </div>

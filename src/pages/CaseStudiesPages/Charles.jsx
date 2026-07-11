@@ -4,28 +4,28 @@ import Header from '../../components/ReusableComponents/Header'
 import CaseStudiesTemplate from '../../components/CaseStudiesComponents/CaseStudiesTemplate'
 import Footer from '../../components/ReusableComponents/Footer'
 import { charles_assets } from '../../assets/case_studies_images/charles_images/charles_assets'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Charles = () => {
+  const { t } = useLanguage()
+  const content = t.caseStudiesPages.charles
+  const caseStudiesContent = t.caseStudiesPages
+
   return (
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Charles Avenue"
+        title={content.title}
         backgroundImage={charles_assets.kitchen_after2}
         showConsultationButton={true}
         showAboutButton={true}
       />
       <CaseStudiesTemplate
-        title="2 bedroom ground floor flat located in Renfrew town centre."
+        title={content.templateTitle}
+        beforeAfterTitle={caseStudiesContent.beforeAfterTitle}
         sections={[
           {
-            title: "Investment Breakdown",
-            lines: [
-              "Purchase price: £39,000",
-              "Fees and costs: £2,180",
-              "Refurbishment: £8,460",
-              "Total investment: £49,640",
-            ],
+            ...content.sections[0],
             image: {
               src: charles_assets.kitchen_after,
               alt: "Kitchen after refurbishment",
@@ -33,12 +33,7 @@ const Charles = () => {
             layout: "image-right",
           },
           {
-            title: "Post-Refurbishment",
-            lines: [
-              "Renovated market value: £58,000",
-              "Mortgage: 75%",
-              "Equity created: £8,360",
-            ],
+            ...content.sections[1],
             image: {
               src: charles_assets.livingroom_after,
               alt: "Livingroom after refurbishment",
@@ -46,12 +41,7 @@ const Charles = () => {
             layout: "image-left",
           },
           {
-            title: "Rental Breakdown",
-            lines: [
-              "Gross monthly rent: £450",
-              "Net monthly cashflow: £246",
-              "Net annually cashflow: £2,952",
-            ],
+            ...content.sections[2],
             image: {
               src: charles_assets.bedroom_after2,
               alt: "Bedroom after refurbishment",
@@ -76,7 +66,7 @@ const Charles = () => {
               {
                 src: charles_assets.kitchen_before,
                 alt: "Kitchen before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -97,7 +87,7 @@ const Charles = () => {
               {
                 src:  charles_assets.livingroom_before,
                 alt: "Livingroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -118,7 +108,7 @@ const Charles = () => {
               {
                 src: charles_assets.bathroom_before,
                 alt: "Bathroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },

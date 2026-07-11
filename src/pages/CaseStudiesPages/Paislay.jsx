@@ -4,28 +4,27 @@ import Header from "../../components/ReusableComponents/Header";
 import CaseStudiesTemplate from "../../components/CaseStudiesComponents/CaseStudiesTemplate";
 import Footer from "../../components/ReusableComponents/Footer";
 import { paislay_assets } from "../../assets/case_studies_images/paislay_images/paislay_assets";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Paislay = () => {
+  const { t } = useLanguage();
+  const content = t.caseStudiesPages.paisley;
+  const caseStudiesContent = t.caseStudiesPages;
+
   return (
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Paisley Road"
+        title={content.title}
         backgroundImage={paislay_assets.kitchen_after}
         showConsultationButton={true}
         showAboutButton={true}
       />
       <CaseStudiesTemplate
+        beforeAfterTitle={caseStudiesContent.beforeAfterTitle}
         sections={[
           {
-            title: "Investment Breakdown",
-            lines: [
-              "This property was purchased in heavily distressed condition after remaining on the market for over a year, creating a strong value-add opportunity.",
-              "Purchase price: £33,500",
-              "Fees and costs: £2,468",
-              "Refurbishment: £9,304",
-              "Total investment: £45,272",
-            ],
+            ...content.sections[0],
             image: {
               src: paislay_assets.bedroom_after,
               alt: "Kitchen after refurbishment",
@@ -33,13 +32,7 @@ const Paislay = () => {
             layout: "image-right",
           },
           {
-            title: "Post-Refurbishment",
-            lines: [
-              "The 2-bedroom flat underwent a full refurbishment, including the installation of a new gas central heating system, brand new kitchen, new carpets, and complete redecoration throughout.",
-              "Renovated market value: £55,000",
-              "Total left in deal: £4,022",
-              "Equity created: £9,728",
-            ],
+            ...content.sections[1],
             image: {
               src: paislay_assets.livingroom_after,
               alt: "Livingroom after refurbishment",
@@ -47,13 +40,7 @@ const Paislay = () => {
             layout: "image-left",
           },
           {
-            title: "Rental Breakdown",
-            lines: [
-              "Following the renovation, the property was successfully let on a long-term basis and added as another strong buy-to-let investment to the portfolio.",
-              "Gross monthly rent: £425",
-              "Net monthly cashflow: £226",
-              "Net annually cashflow: £2,712",
-            ],
+            ...content.sections[2],
             image: {
               src: paislay_assets.bathroom_after,
               alt: "Bedroom after refurbishment",
@@ -72,14 +59,14 @@ const Paislay = () => {
               {
                 src: paislay_assets.kitchen_before2,
                 alt: "Kitchen after",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
             beforeImages: [
               {
                 src: paislay_assets.kitchen_before,
                 alt: "Kitchen before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -100,7 +87,7 @@ const Paislay = () => {
               {
                 src: paislay_assets.bedroom_before,
                 alt: "Livingroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -115,14 +102,14 @@ const Paislay = () => {
               {
                 src: paislay_assets.livingroom_before,
                 alt: "Bathroom after",
-                label: "Before"
+                label: caseStudiesContent.beforeLabel
               },
             ],
             beforeImages: [
               {
                 src: paislay_assets.bathroom_before,
                 alt: "Bathroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },

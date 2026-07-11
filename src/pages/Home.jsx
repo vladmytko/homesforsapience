@@ -10,6 +10,7 @@ import Footer from '../components/ReusableComponents/Footer'
 import HomePageAbout from '../components/HomePageComponents/HomePageAbout'
 import HomeCaseStudies from '../components/HomePageComponents/HomePageCaseStudies/HomeCaseStudies'
 import { useLocation } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 
 
@@ -17,6 +18,8 @@ const Home = () => {
 
   // Navigation to Contact form in Home Page
   const location = useLocation();
+  const { t } = useLanguage();
+  const content = t.homePageHeader;
 
   useEffect(() => {
     if (location.hash === "#Contact") {
@@ -31,7 +34,7 @@ const Home = () => {
     <>
       <Navbar />
       <Header
-        title="Property Investment and Consultancy"
+        title={content.title}
         backgroundImage={assets_manager.home_hero}
         showConsultationButton={true}
         showAboutButton={true}

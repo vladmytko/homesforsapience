@@ -4,25 +4,27 @@ import Navbar from '../../components/ReusableComponents/Navbar'
 import CaseStudiesTemplate from '../../components/CaseStudiesComponents/CaseStudiesTemplate'
 import Footer from '../../components/ReusableComponents/Footer'
 import Header from '../../components/ReusableComponents/Header'
+import { useLanguage } from '../../context/LanguageContext'
 
 const DukeRoad = () => {
+  const { t } = useLanguage()
+  const content = t.caseStudiesPages.dukeRoad
+  const caseStudiesContent = t.caseStudiesPages
+
   return (
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Dyke Road"
+        title={content.title}
         backgroundImage={duke_assets.livingroom_after}
         showConsultationButton={true}
         showAboutButton={true}
       />
       <CaseStudiesTemplate
+        beforeAfterTitle={caseStudiesContent.beforeAfterTitle}
         sections={[
           {
-            title: "Initial Investment Strategy",
-            lines: [
-              "The property was originally planned as an assisted sale project, where the goal was to refurbish the house and help the owner sell it at full market value.",
-              "The refurbishment work was completed quickly, allowing the property to return to the market within just four weeks."
-            ],
+            ...content.sections[0],
             image: {
               src: duke_assets.kitchen_after,
               alt: "Kitchen after refurbishment",
@@ -30,11 +32,7 @@ const DukeRoad = () => {
             layout: "image-right",
           },
           {
-            title: "Challenges During the Sale",
-            lines: [
-              "Despite multiple viewings and strong interest, the property remained unsold.",
-              "The main issue identified was the lack of parking directly in front of the house, which became a concern for potential buyers and affected the sale process."
-            ],
+            ...content.sections[1],
             image: {
               src: duke_assets.bedroom_after,
               alt: "Bedroom after refurbishment",
@@ -42,11 +40,7 @@ const DukeRoad = () => {
             layout: "image-left",
           },
           {
-            title: "Successful Outcome",
-            lines: [
-              "The property was rented out quickly and added to the investment portfolio at a discounted acquisition price, as refurbishment costs had already been invested into the project.",
-              "The property was successfully refinanced at the full market value of £120,000 just two months after purchase and now generates a rental income of £795 per month."
-            ],
+            ...content.sections[2],
             image: {
               src: duke_assets.livingroom_after,
               alt: "Bedroom after refurbishment",
@@ -71,7 +65,7 @@ const DukeRoad = () => {
               {
                 src: duke_assets.livingroom_before,
                 alt: "Livingroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -92,7 +86,7 @@ const DukeRoad = () => {
               {
                 src:  duke_assets.kitchen_before,
                 alt: "Kitchen before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },

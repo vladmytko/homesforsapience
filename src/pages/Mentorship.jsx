@@ -5,8 +5,11 @@ import TestimonialsSection from "../components/HomePageComponents/HomeTestimonia
 import Footer from "../components/ReusableComponents/Footer";
 import ContactForm from "../components/ReusableComponents/ContactForm";
 import CoachingServiceCard from "../components/ReusableComponents/CoachingServiceCard"
+import { useLanguage } from "../context/LanguageContext";
 
 const Mentorship = () => {
+  const { t } = useLanguage();
+  const content = t.coachingPage;
   return (
     <section>
       <Navbar />
@@ -16,7 +19,7 @@ const Mentorship = () => {
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
-            Coaching
+            {content.title}
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -36,22 +39,15 @@ const Mentorship = () => {
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-xl">
                 <div className="space-y-4 text-base sm:text-xl text-gray-900 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
-                    With nearly a decade of hands-on experience in the UK
-                    property market — across sourcing, mortgages, renovation,
-                    letting, and exit strategies — I share what truly works.
+                    {content.paragraphOne}
                   </p>
 
                   <p className="leading-relaxed">
-                    This is not theory, but real, up-to-date experience based on
-                    real cases. My clients consistently say I save them months —
-                    and sometimes even years — of costly trial and error.
+                    {content.paragraphTwo}
                   </p>
 
                   <p className="leading-relaxed">
-                    From deal sourcing and finance to renovation decisions,
-                    letting strategies, and exit planning — I support you at
-                    every stage of the investment journey. You don’t have to
-                    navigate the process alone.
+                    {content.paragraphThree}
                   </p>
                 </div>
               </div>
@@ -63,25 +59,16 @@ const Mentorship = () => {
       <div className="w-full bg-(--color-bg-warm)">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
-            What we can cover
+            {content.title2}
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-left text-base sm:text-xl text-gray-900">
             <p className="leading-relaxed">
-              Structured three-month coaching programme designed to help you
-              move forward quickly. If you already have investment experience, I
-              will help you optimise your portfolio and release equity to
-              support further growth. Together, we can explore more advanced
-              strategies such as HMOs, the BRRRR method, or short-term lets —
-              always aligned with your long-term goals.
+              {content.paragraphFour}
             </p>
 
             <p className="leading-relaxed">
-              This is not motivational fluff. Every session is structured,
-              practical, and focused on helping you take clear next steps
-              without feeling overwhelmed. My clients value the hands-on and
-              strategic nature of the support they receive. You’ll leave each
-              session with clarity, confidence, and a clear plan of action.
+              {content.paragraphFive}
             </p>
           </div>
         </div>

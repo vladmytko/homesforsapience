@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { assets_manager } from "../../assets/assets_manager";
 import Button from "../ReusableComponents/Button";
+import { useLanguage } from "../../context/LanguageContext";
 
 
-const stats = [
-  { value: 12, suffix: "+", label: "years of experience" },
-  { value: 50, suffix: "+", label: "property deals completed" },
-  { value: 100, suffix: "+", label: "happy clients" },
-  { value: 500, suffix: "+", label: "properties analysed" },
-];
+
 
 const AnimatedNumber = ({ value, suffix = "", duration = 1800, start, delay = 0 }) => {
   const [count, setCount] = useState(0);
@@ -63,6 +59,16 @@ const HomePageAbout = () => {
   const statsRef = useRef(null);
   const [startCounting, setStartCounting] = useState(false);
 
+  const { t } = useLanguage();
+  const content = t.homePageAbout;
+
+  const stats = [
+  { value: 12, suffix: "+", label: content.label1 },
+  { value: 50, suffix: "+", label: content.label2 },
+  { value: 100, suffix: "+", label: content.label3 },
+  { value: 500, suffix: "+", label: content.label4 },
+];
+
   useEffect(() => {
     const element = statsRef.current;
     if(!element) return;
@@ -91,7 +97,7 @@ const HomePageAbout = () => {
       {/** py = vertical (top + bottom) */}
       <div className="max-w-7xl sm:mx-auto py-12 sm:py-10 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
-          Founder
+          {content.title}
         </h2>
 
         <div className="flex flex-col md:flex-row lg:gap-10">
@@ -110,28 +116,24 @@ const HomePageAbout = () => {
 
           <div className="w-full lg:w-1/2 order-1 md:order-2 flex flex-col sm:mx-5">
             <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-10">
-              Timur Khismatullin
+              {content.name}
             </h2>
 
             <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4 text-base sm:text-xl">
               <p className="leading-relaxed">
-                Expert and mentor in buying and investing in UK property.
+                {content.paragraphOne}
               </p>
 
               <p className="leading-relaxed">
-                Property is one of the most powerful ways to build long-term
-                wealth. I help individuals and investors make smarter decisions
-                when purchasing property in the UK — whether it’s for living,
-                business, or investment.
+                 {content.paragraphTwo}
               </p>
 
               <p className="leading-relaxed">
-                My goal is simple: help you choose the right property and avoid
-                the mistakes many buyers make.
+                 {content.paragraphThree}
               </p>
 
               <div className="mt-auto mb-10 text-base">
-                <Button title="Read More" link={"/about"} />
+                <Button title={content.button} link={"/about"} />
               </div>
             </div>
           </div>

@@ -4,13 +4,18 @@ import Header from "../../components/ReusableComponents/Header";
 import CaseStudiesTemplate from "../../components/CaseStudiesComponents/CaseStudiesTemplate";
 import Footer from "../../components/ReusableComponents/Footer";
 import { mosspark_assets } from "../../assets/case_studies_images/mosspark_images/mosspark_assets";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Mosspark = () => {
+  const { t } = useLanguage();
+  const content = t.caseStudiesPages.mosspark;
+  const caseStudiesContent = t.caseStudiesPages;
+
   return (
     <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Mosspark"
+        title={content.title}
         backgroundImage={mosspark_assets.mosspark_hero}
         showConsultationButton={true}
         showAboutButton={true}
@@ -22,15 +27,10 @@ const Mosspark = () => {
         //   "To add value, we removed a wall to create a bright and modern open-plan kitchen. A small cupboard next to the bathroom was turned into a compact shower cubicle to make better use of the space.",
         //   "We also added a new driveway to boost curb appeal—and as a bonus, enjoyed a great harvest from the apple tree in the garden before the property was sold!",
         // ]}
+        beforeAfterTitle={caseStudiesContent.beforeAfterTitle}
         sections={[
           {
-            title: "Investment Strategy",
-            lines: [
-              "This tenanted property was purchased in 2022 as part of a larger portfolio. When the numbers didn’t work for a traditional buy-to-let, the strategy was changed to a flip instead.",
-              "- Purchase price: £130,000",
-              "- Refurbishment: £34,100",
-              
-            ],
+            ...content.sections[0],
             image: {
               src: mosspark_assets.mosspark_bedroom1_2,
               alt: "Kitchen after refurbishment",
@@ -38,13 +38,7 @@ const Mosspark = () => {
             layout: "image-right",
           },
           {
-            title: "Creating Value",
-            lines: [
-              "A wall was removed to create a bright open-plan kitchen, while a small cupboard next to the bathroom was converted into a compact shower cubicle to improve the layout.",
-              "A new driveway was also added to boost curb appeal before the property was sold.",
-              "- Total investment: £164,100",
-              "Sold for: £227,000",
-            ],
+            ...content.sections[1],
             image: {
               src: mosspark_assets.mosspark_kitchen_2,
               alt: "Bedroom after refurbishment",
@@ -52,11 +46,7 @@ const Mosspark = () => {
             layout: "image-left",
           },
           {
-            title: "Creating Value",
-            lines: [
-              "Following the refurbishment, the property was successfully prepared for resale as a more modern and desirable home — with the added bonus of a great apple harvest from the garden before completion.",
-              "- Sold for: £227,000",
-            ],
+            ...content.sections[2],
             image: {
               src: mosspark_assets.mosspark_kitchen_2,
               alt: "Bedroom after refurbishment",
@@ -81,7 +71,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_livingroom_before,
                 alt: "Livingroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -102,7 +92,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_kitchen_before,
                 alt: "Kitchen before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -123,7 +113,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_bathroom_before,
                 alt: "Bathroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -144,7 +134,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_bedroom_before,
                 alt: "Bedroom1 before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -165,7 +155,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_bedroom_before2,
                 alt: "Bedroom2 before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -186,7 +176,7 @@ const Mosspark = () => {
               {
                 src: mosspark_assets.mosspark_smallbed_before,
                 alt: "Bedroom3 before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },

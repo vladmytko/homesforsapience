@@ -1,8 +1,13 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useLanguage } from "../../context/LanguageContext";
 
 
 const ContactForm = () => {
+
+  const { t } = useLanguage();
+  const content = t.contactForm;
+
   const form = useRef();
   const [status, setStatus] = useState("");
   const [cooldown, setCooldown] = useState(false);
@@ -51,7 +56,7 @@ const ContactForm = () => {
     >
       <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl  mb-5">
-          Any Questions?
+          {content.title}
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-10 mx-auto max-w-xl lg:max-w-none lg:w-full ">
@@ -59,15 +64,14 @@ const ContactForm = () => {
           <div className="flex flex-col text-left text-black mt-5 lg:mt-28">
             <div className="text-base sm:text-xl mb-2 text-gray-700 leading-relaxed">
               <p className="mb-2">
-                Fill out the application and we will contact you in a way
-                convenient for you.
+                 {content.paragraph}
               </p>
 
               <br />
 
-              <p className="mb-2">Email: timur@homesforsapiens.com</p>
+              <p className="mb-2">{content.emailAddress}</p>
 
-              <p className="mb-2">Phone: 07400049497</p>
+              <p className="mb-2">{content.phone}</p>
             </div>
           </div>
 
@@ -79,14 +83,13 @@ const ContactForm = () => {
               // SHOW this message
               <div className="bg-white rounded-2xl p-12 text-center">
                 <h2 className="text-3xl font-bold text-green-700 mb-4">
-                  Thank you!
+                  {content.respondMessage.text1}
                 </h2>
                 <p className="text-xl text-gray-700 mb-6">
-                  Your message has been sent successfully. We will get
-                  back to you shortly.
+                  {content.respondMessage.text2}
                 </p>
                 <p className="text-sm text-gray-500">
-                  We usually respond within 24 hours.
+                  {content.respondMessage.text3}
                 </p>
               </div>
             ) : (
@@ -102,13 +105,13 @@ const ContactForm = () => {
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="text-left">
                     <label className="block text-xl text-gray-700 font-medium mb-1">
-                      First Name
+                      {content.formFirstName}
                     </label>
                     <input
                       className="w-full border border-gray-300 rounded-md py-1 sm:py-3 px-4 mt-2 focus:outline-none focus:ring focus:ring-green-500"
                       type="text"
                       name="first_name"
-                      placeholder="Your first name"
+                      placeholder={content.formFirstNamePlaceholder}
                       maxLength={80}
                       required
                     />
@@ -116,13 +119,13 @@ const ContactForm = () => {
 
                   <div className="text-left">
                     <label className="block text-xl text-gray-700 font-medium mb-1">
-                      Last Name
+                      {content.formLastName}
                     </label>
                     <input
                       className="w-full border border-gray-300 rounded-md py-1 sm:py-3 px-4 mt-2 focus:outline-none focus:ring focus:ring-green-500"
                       type="text"
                       name="last_name"
-                      placeholder="Your last name"
+                      placeholder={content.formLastNamePlaceholder}
                       maxLength={80}
                       required
                     />
@@ -132,43 +135,27 @@ const ContactForm = () => {
                 {/* EMAIL INPUT */}
                 <div className="w-full text-left">
                   <label className="block text-xl text-gray-700 font-medium mb-1">
-                    Email
+                    {content.formEmail}
                   </label>
                   <input
                     className="w-full border border-gray-300 rounded-md py-1 sm:py-3 px-4 mt-2 focus:outline-none focus:ring focus:ring-green-500"
                     type="email"
                     name="user_email"
-                    placeholder="Your email"
+                    placeholder={content.formEmailPlaceholder}
                     maxLength={120}
                     required
                   />
                 </div>
 
-                {/* PHONE NUMBER INPUT */}
-                {/* <div className="w-full text-left">
-                  <label className="block text-base sm:text-xl font-medium mb-1">
-                    Phone
-                  </label>
-                  <input
-                    className="w-full border border-gray-300 rounded-md py-1 sm:py-3 px-4 mt-2 focus:outline-none focus:ring focus:ring-green-500"
-                    type="tel"
-                    name="user_phone"
-                    placeholder="+44 or 07..."
-                    pattern="^(\+44|44|0)7\d{9}$"
-                    title="Enter a valid UK phone number"
-                    maxLength={20}
-                  />
-                </div> */}
-
                 {/* MESSAGE INPUT */}
                 <div className="my-6 text-left">
                   <label className="block text-xl text-gray-700 font-medium mb-1">
-                    Message
+                    {content.formMessage}
                   </label>
                   <textarea
                     className="w-full  border border-gray-300 rounded-md py-1 sm:py-3 px-4 mt-2 h-48 resize-none focus:outline-none focus:ring focus:ring-green-500"
                     name="message"
-                    placeholder="Message"
+                    placeholder={content.formMessage}
                     maxLength={1200}
                     required
                   ></textarea>
@@ -193,11 +180,9 @@ const ContactForm = () => {
                       required
                     />
                     <span className="pr-2">
-                      By submitting this form, you agree to be contacted
-                      regarding your enquiry. Your details will not be shared.
-                      Check{" "}
+                       {content.formtTickBoxText}{" "}
                       <a href="/privacy-policy" className="hover:underline">
-                        Privacy Policy
+                        {content.formPolicyButton}
                       </a>
                     </span>
                   </label>
@@ -214,7 +199,7 @@ const ContactForm = () => {
                       : "bg-(--color-button-primary) hover:bg-(--color-button-primary-hover)"
                   }`}
                 >
-                  Send Message
+                  {content.formButton}
                 </button>
 
                 {status === "error" && (

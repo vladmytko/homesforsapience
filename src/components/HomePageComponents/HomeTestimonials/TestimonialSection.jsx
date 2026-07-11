@@ -1,22 +1,20 @@
-import { testimonialsData } from "./TestimonialsData";
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../../ReusableComponents/Button";
 import { useEffect, useState } from "react";
 import { assets_manager } from "../../../assets/assets_manager";
+import { useLanguage } from "../../../context/LanguageContext";
 
 const Slider = SlickSlider?.default || SlickSlider;
 
-const ArrowButton = ({ className, style, onClick, direction }) => (
+const ArrowButton = ({ className, style, onClick, direction, labels }) => (
   <button
     type="button"
     className={`${className} flex! items-center! justify-center! w-8! h-8! rounded-full! bg-(--color-brand-primary)/70! opacity-100! hover:bg-(--color-brand-primary)! transition-colors! duration-200! before:hidden! z-10! shadow-md!`}
     style={{ ...style }}
     onClick={onClick}
-    aria-label={
-      direction === "next" ? "Next testimonial" : "Previous testimonial"
-    }
+    aria-label={direction === "next" ? labels.next : labels.previous}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +34,9 @@ const ArrowButton = ({ className, style, onClick, direction }) => (
 );
 
 const TestimonialSection = () => {
+  const { t } = useLanguage();
+  const content = t.testimonialsSection;
+
   const getInitials = (name) =>
     name
       .split(" ")
@@ -64,8 +65,8 @@ const TestimonialSection = () => {
     speed: 500,
     slidesToShow, // default: large screen
     slidesToScroll: 1,
-    prevArrow: <ArrowButton direction="prev" />,
-    nextArrow: <ArrowButton direction="next" />,
+    prevArrow: <ArrowButton direction="prev" labels={content.aria} />,
+    nextArrow: <ArrowButton direction="next" labels={content.aria} />,
     responsive: [
       {
         breakpoint: 1024, // below 1024px -> medium screen
@@ -91,14 +92,14 @@ const TestimonialSection = () => {
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-10 px-4 sm:px-6 lg:px-12">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-5xl mb-2" >
-          Hear From Our Clients
+          {content.title}
         </h2>
         <p className="text-gray-600 text-sm sm:text-base mb-8">
-          Real experiences shared by our happy clients on Google.
+          {content.subtitle}
         </p>
 
         <Slider {...settings}>
-          {testimonialsData.map((item) => (
+          {content.items.map((item) => (
             <div key={item.id} className="px-2 sm:px-3 h-full">
               <article className="flex flex-col bg-white border border-gray-200 min-h-105 sm:min-h-115 w-full max-w-117.5 mx-auto p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
                 <div className="flex items-start justify-between gap-4 mb-4">
@@ -112,12 +113,12 @@ const TestimonialSection = () => {
                         {item.name}
                       </p>
                       <p className="text-xs sm:text-sm text-gray-500">
-                        Google review
+                        {content.source}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-1 shrink-0" aria-label="5 star rating">
+                  <div className="flex items-center gap-1 shrink-0" aria-label={content.aria.rating}>
                     {/* <span className="text-[#4285F4] font-bold text-lg leading-none">G</span> */}
                     <img className="h-10" src={assets_manager.google_logo} alt="" />
                   </div>
@@ -149,7 +150,7 @@ const TestimonialSection = () => {
 
         <div className="mt-12 pb-4 items-center text-center">
           <Button
-            title="See All Reviews"
+            title={content.button}
             link="https://www.google.com/maps/place/Homes+for+Sapiens/@50.1144502,11.6330359,11z/data=!4m8!3m7!1s0x6d26c96f6f885007:0x40a4c139174f09ba!8m2!3d47.73855!4d12.5088275!9m1!1b1!16s%2Fg%2F11y8hymp8q?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
           />
         </div>

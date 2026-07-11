@@ -8,30 +8,12 @@ import Footer from "../components/ReusableComponents/Footer";
 import ContactForm from "../components/ReusableComponents/ContactForm";
 import ServiceCards from "../components/ReusableComponents/ServiceCards";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 motion
 
 const Consultancy = () => {
-  const consultancyPoints = [
-    "Reviewing your current financial position",
-    "Identifying market opportunities",
-    "Understanding mortgages and funding options",
-    "Analysing potential deals",
-    "Planning refurbishment and value-add strategies",
-    "Optimising rental strategy and cash flow",
-    "Scaling and structuring your property portfolio",
-    "Avoiding common investment mistakes"
-  ];
-
-  const consultancyPointsTitle = [
-    "Financial Review",
-    "Opportunities",
-    "Financing",
-    "Analysis",
-    "Refurbishment",
-    "Optimisation",
-    "Scaling & Structure",
-    "Risk Avoidance"
-  ];
+  const { language, t } = useLanguage();
+  const content = t.consultationPage;
 
   const listContainerVariables = {
     hidden: {},
@@ -75,7 +57,7 @@ const Consultancy = () => {
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-12 sm:py-10 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-10">
-            Property Investment Consultation
+            {content.title}
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -94,32 +76,11 @@ const Consultancy = () => {
 
               <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col text-base sm:text-xl">
                 <div className="space-y-1 sm:space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
-                  <p className="leading-relaxed">
-                    If you are not yet ready for full coaching but want
-                    professional direction, a one-hour consultation is the
-                    perfect starting point.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    This focused session is designed to give you clarity,
-                    practical advice and a clear action plan for your next steps
-                    in property investment.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    There are no templates here. Every investor’s journey is
-                    different. We will take time to understand your goals,
-                    financial position, and risk tolerance in order to design a
-                    strategy that truly fits your situation. The process is not
-                    complicated, but it does require commitment and focus.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    There are no shortcuts or “magic solutions” — otherwise
-                    everyone would already have them. What you will get instead
-                    is a clear strategy and practical blueprint, and I am here
-                    to guide you through it.
-                  </p>
+                  {content.paragraphs.map((paragraph) => (
+                    <p key={paragraph} className="leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </div>
             </div>
@@ -130,19 +91,20 @@ const Consultancy = () => {
       <div className="w-full bg-(--color-bg-warm)">
         <div className="lg:max-w-7xl mx-auto py-12 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-3xl lg:text-4xl mb-5">
-            Consultation Focus
+            {content.points.title}
           </h2>
 
           <motion.ul
+            key={language}
             className="grid grid-cols-1 sm:grid-cols-2 md:ml-20 gap-x-10 gap-y-2 md:gap-y-10 text-gray-800"
             variants={listContainerVariables}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            {consultancyPoints.map((point, index) => (
+            {content.points.items.map((point) => (
               <motion.li
-                key={point}
+                key={point.title}
                 variants={listItemVariants}
                 className="group flex items-start rounded-xl p-3 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/60 hover:shadow-md"
               >
@@ -153,9 +115,9 @@ const Consultancy = () => {
                   className="w-10 h-10 shrink-0 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-rotate-6"
                 />
                 <div className="flex flex-col">
-                  <span className="text-xl sm:text-3xl text-gray-800">{consultancyPointsTitle[index]}</span>
+                  <span className="text-xl sm:text-3xl text-gray-800">{point.title}</span>
                   <span className="transition-colors duration-300 group-hover:text-(--color-text-dark) text-base sm:text-xl text-gray-500">
-                  {point}
+                  {point.text}
                 </span>
                 </div>
                 </div>

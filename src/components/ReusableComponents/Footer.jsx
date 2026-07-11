@@ -1,8 +1,12 @@
 import React from "react";
 import { assets_manager } from "../../assets/assets_manager";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  const content = t.footer;
+
   return (
     <section className="py-10 bg-white ">
       <div className="px-4 mx-auto sm:px-8 max-w-7xl">
@@ -10,13 +14,13 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-2 lg:pr-8">
             <img className="w-60 h-auto" src={assets_manager.logo} alt="" />
 
-            <ul class="flex items-center space-x-3 mt-5">
+            <ul className="flex items-center space-x-3 mt-5">
               <li>
                 <a
                   href="https://www.facebook.com/timur.khismatullin.7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
+                  className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
                     className="w-9 h-9"
@@ -34,10 +38,10 @@ const Footer = () => {
                   href="https://www.instagram.com/timur_uk_property/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
+                  className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-12 h-12 hover:bg-[#fcd92f] "
                 >
                   <svg
-                    class="w-9 h-9"ßß
+                    className="w-9 h-9"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -52,106 +56,105 @@ const Footer = () => {
           </div>
 
           <div>
-            <p class="mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Navigation
+            <p className="mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
+              {content.navigation.title}
             </p>
 
-            <ul class="mt-6 space-y-6">
+            <ul className="mt-6 space-y-6">
               <li>
                 <Link
                   to="/about"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  About Us
+                  {content.navigation.link1}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/case-studies"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Projects
+                  {content.navigation.link2}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/testimonials"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Testimonials
+                  {content.navigation.link3}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class=" mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Services
+            <p className=" mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
+              {content.services.title}
             </p>
 
-            <ul class="mt-6 space-y-6">
+            <ul className="mt-6 space-y-6">
               <li>
                 <Link
                   to="/consultation"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Consultation
+                  {content.services.link1}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/coaching"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Coaching
+                  {content.services.link2}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/consultation#free-call"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Free Call
+                  {content.services.link3}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class="mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Contact
+            <p className="mt-5 text-sm font-semibold tracking-widest text-gray-400 uppercase">
+              {content.contact.title}
             </p>
 
-            <ul class="mt-6 space-y-6">
+            <ul className="mt-6 space-y-6">
               <li>
                 <Link
                   to="/#Contact"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  {" "}
-                  Contact{" "}
+                  {content.contact.link1}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/privacy-policy"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Privacy Policy
+                  {content.contact.link2}
                 </Link>
               </li>
 
               <li>
                 <Link
                   to="/terms-conditions"
-                  class="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
+                  className="flex text-base text-black transition-all duration-200 hover:text-[#fcd92f]"
                 >
-                  Terms & Conditions
+                  {content.contact.link3}
                 </Link>
               </li>
             </ul>

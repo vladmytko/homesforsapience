@@ -4,28 +4,27 @@ import Header from '../../components/ReusableComponents/Header'
 import CaseStudiesTemplate from '../../components/CaseStudiesComponents/CaseStudiesTemplate'
 import Footer from '../../components/ReusableComponents/Footer'
 import { netherhill_assets } from '../../assets/case_studies_images/netherhill/netherhill_assets'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Netherhill = () => {
+  const { t } = useLanguage()
+  const content = t.caseStudiesPages.netherhill
+  const caseStudiesContent = t.caseStudiesPages
+
   return (
      <section className="overflow-hidden">
       <Navbar />
       <Header
-        title="Netherhill Road"
+        title={content.title}
         backgroundImage={netherhill_assets.kitchen_after}
         showConsultationButton={true}
         showAboutButton={true}
       />
       <CaseStudiesTemplate
+        beforeAfterTitle={caseStudiesContent.beforeAfterTitle}
         sections={[
           {
-            title: "Investment Breakdown",
-            lines: [
-              "This 2-bedroom ground floor flat in Paisley Gallowhill was purchased in very poor condition, with damp issues, an outdated boiler requiring replacement, and signs of general neglect throughout the property.",
-              "- Purchase price: £32,000",
-              "- Fees and costs: £1,394",
-              "- Refurbishment: £9,319",
-              "- Total investment: £42,713",
-            ],
+            ...content.sections[0],
             image: {
               src: netherhill_assets.coridor_after,
               alt: "Kitchen after refurbishment",
@@ -33,14 +32,7 @@ const Netherhill = () => {
             layout: "image-right",
           },
           {
-            title: "Post-Refurbishment",
-            lines: [
-              "The refurbishment was completed in September 2017, transforming the flat into a clean and modern rental property.",
-              "- Renovated market value: £55,000",
-              "- Mortgage: 75%",
-              "- Total left in deal: £1,463",
-              "- Equity created: £12,287",
-            ],
+            ...content.sections[1],
             image: {
               src: netherhill_assets.livingroom_after,
               alt: "Livingroom after refurbishment",
@@ -48,13 +40,7 @@ const Netherhill = () => {
             layout: "image-left",
           },
           {
-            title: "Rental Breakdown",
-            lines: [
-              "The property was successfully tenanted from October 2017 onwards.",
-              "- Gross monthly rent: £425",
-              "- Net monthly cashflow: £235",
-              "- Net annually cashflow: £2,820",
-            ],
+            ...content.sections[2],
             image: {
               src: netherhill_assets.kitchen_after,
               alt: "Bedroom after refurbishment",
@@ -73,14 +59,14 @@ const Netherhill = () => {
               {
                 src: netherhill_assets.kitchen_before2,
                 alt: "Kitchen after",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
             beforeImages: [
               {
                 src: netherhill_assets.kitchen_before,
                 alt: "Kitchen before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -101,7 +87,7 @@ const Netherhill = () => {
               {
                 src: netherhill_assets.livingroom_before,
                 alt: "Livingroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },
@@ -122,7 +108,7 @@ const Netherhill = () => {
               {
                 src: netherhill_assets.coridor_before,
                 alt: "Bathroom before",
-                label: "Before",
+                label: caseStudiesContent.beforeLabel,
               },
             ],
           },

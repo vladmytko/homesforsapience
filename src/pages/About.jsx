@@ -3,8 +3,12 @@ import { assets_manager } from "../assets/assets_manager";
 import Footer from "../components/ReusableComponents/Footer";
 import Navbar from "../components/ReusableComponents/Navbar";
 import Button from "../components/ReusableComponents/Button";
+import { useLanguage } from "../context/LanguageContext";
+
 
 const About = () => {
+  const { t } = useLanguage();
+    const content = t.aboutPage;
   return (
     <section>
       <Navbar />
@@ -14,7 +18,7 @@ const About = () => {
       <div className="bg-(--color-bg-gray) w-full">
         <div className="lg:max-w-7xl mx-auto py-10 px-6 lg:px-8">
           <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-10">
-            Meet The Founder
+            {content.title}
           </h2>
           <div className="justify-center">
             <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -34,22 +38,11 @@ const About = () => {
               <div className="lg:w-1/2 order-2 lg:order-1 flex flex-col text-base sm:text-xl">
                 <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
-                    My name is Timur Khismatullin. I moved to Scotland in 2010
-                    and began my journey in property in 2016. That same year, I
-                    completed my first investment courses and realised just how
-                    crucial mentors, community, and hands-on experience truly
-                    are. I’ve always been driven by the idea of financial
-                    freedom — earning from something you build once, rather than
-                    staying stuck in the constant daily grind.
+                    {content.paragraphOne}
                   </p>
 
                   <p className="leading-relaxed">
-                    My strategy focuses on purchasing, financing, and
-                    refurbishing residential properties, followed by long-term
-                    letting. Over the years, I’ve completed dozens of deals,
-                    working with both bank and private finance. I collaborate
-                    closely with builders, brokers, and solicitors, and I
-                    understand the entire process from the inside out.
+                    {content.paragraphTwo}
                   </p>
                 </div>
               </div>
@@ -76,18 +69,11 @@ const About = () => {
               <div className="lg:w-1/2 order1 lg:order-2 flex flex-col text-base sm:text-xl">
                 <div className="space-y-4 text-gray-800 flex flex-col flex-1 gap-4">
                   <p className="leading-relaxed">
-                    Today, I continue to invest personally while also helping
-                    others — sharing my experience, explaining how to assess a
-                    property, what to look out for, how to build a sound
-                    strategy, and how to avoid the most common mistakes. I work
-                    with clients who want to buy a home for themselves as well
-                    as those exploring property as an investment.
+                    {content.paragraphThree}
                   </p>
 
                   <p className="leading-relaxed">
-                    If you want to feel confident navigating the world of UK
-                    property, I’d be delighted to meet you — and I’m here to
-                    help.
+                    {content.paragraphFour}
                   </p>
 
                   <div className="py-5">
@@ -97,7 +83,7 @@ const About = () => {
                       rel="noopener noreferrer"
                       className="bg-(--color-button-primary) text-(--color-text-white) px-8 py-4 rounded-full hover:bg-(--color-button-primary-hover) transition-colors duration-300"
                     >
-                      Book Free Call
+                      {content.button}
                     </a>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../../context/LanguageContext';
 
 const Header = ({
     title,
@@ -8,6 +9,8 @@ const Header = ({
     showConsultationButton = true,
     showAboutButton = true
 }) => {
+    const { t } = useLanguage();
+    const content = t.homePageHeader;
   return (
     <div 
         className='h-[80vh] md-4 bg-cover bg-bottom flex items-center w-full overflow-hidden'
@@ -33,7 +36,7 @@ const Header = ({
                     >
                         <>
                             <span className='absolute inset-0 bg-(--color-brand-secondary) scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
-                            <span className='relative z-10'>Book Consultation</span>
+                            <span className='relative z-10'>{content.button1}</span>
                         </>
                     </Link>
                 )}
@@ -45,7 +48,7 @@ const Header = ({
                     >
                         <>
                             <span className='absolute inset-0 bg-(--color-button-primary) scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
-                            <span className='relative z-10'>About Us</span>
+                            <span className='relative z-10'>{content.button2}</span>
                         </>
                     </Link>
                 )}

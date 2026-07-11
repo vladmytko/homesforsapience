@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useLanguage } from '../../context/LanguageContext'
 
 export const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 1100)
+  const { language, changeLanguage, t } = useLanguage();
+  const content = t.navbar;
+  
+  
 
   const navLinks = [
-    { label: 'Home', path: '/' },
-    { label: 'Consultation', path: '/consultation' },
-    { label: 'Support', path: '/support' },
-    { label: 'Coaching', path: '/coaching' },
-    { label: 'About Us', path: '/about' },
-    { label: 'Projects', path: '/case-studies' },
-    { label: 'Testimonials', path: '/testimonials' },
-    { label: 'Blog', path: '/blog' },
-    { label: 'Contact', path: '/#Contact', neverActive: true },
+    { label: content.home, path: '/' },
+    { label: content.consultation, path: '/consultation' },
+    { label: content.support, path: '/support' },
+    { label: content.coaching, path: '/coaching' },
+    { label: content.about, path: '/about' },
+    { label: content.projects, path: '/case-studies' },
+    { label: content.testimonials, path: '/testimonials' },
+    { label: content.blog, path: '/blog' },
+    { label: content.contact, path: '/#Contact', neverActive: true },
   ]
 
   useEffect(() => {
@@ -123,6 +128,21 @@ export const Navbar = () => {
                 </NavLink>
                 
               ))}
+              <button
+                onClick={() => changeLanguage(language === 'en' ? 'ru' : 'en')}
+                style={{
+                  marginLeft: '12px',
+                  padding: '8px 14px',
+                  borderRadius: '999px',
+                  border: '1px solid rgba(247, 244, 235, 0.35)',
+                  background: 'transparent',
+                  color: '#F7F4EB',
+                  cursor: 'pointer',
+                  fontWeight: 600,
+                }}
+              >
+                {language === 'en' ? 'RU' : 'EN'}
+              </button>
               {/* <button
                 onClick={() => {
                   const select = document.querySelector('.goog-te-combo')
@@ -265,6 +285,21 @@ export const Navbar = () => {
                     {link.label}
                   </NavLink>
                 ))}
+                <button
+                  onClick={() => changeLanguage(language === 'en' ? 'ru' : 'en')}
+                  style={{
+                    marginTop: '20px',
+                    padding: '12px',
+                    borderRadius: '999px',
+                    border: '1px solid #31110F',
+                    background: 'transparent',
+                    color: '#31110F',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                  }}
+                >
+                  {language === 'en' ? 'Русский' : 'English'}
+                </button>
                 {/* <button
                   onClick={() => {
                     const select = document.querySelector('.goog-te-combo')
@@ -303,7 +338,7 @@ export const Navbar = () => {
                 fontWeight: 600,
               }}
             >
-              Book Consultation
+              {content.bookConsultation}
             </NavLink>
           </div>
         </>

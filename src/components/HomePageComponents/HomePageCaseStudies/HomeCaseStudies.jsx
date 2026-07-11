@@ -2,8 +2,11 @@ import React from "react";
 import { CaseStudiesItems } from "./CaseStudiesItems";
 import Button from "../../ReusableComponents/Button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../../context/LanguageContext";
 
 const HomeCaseStudies = () => {
+  const { t } = useLanguage();
+  const content = t.caseStudiesItems;
   return (
     <section
       id="CaseStudiesIntro"
@@ -16,7 +19,10 @@ const HomeCaseStudies = () => {
 
         <div className="container mx-auto">
           <div className="grid gap-5 sm:gap-8 md:grid-cols-1 xl:grid-cols-3">
-            {CaseStudiesItems.map((item) => (
+            {CaseStudiesItems.map((item) => {
+              const translated = t.caseStudiesItems[item.id]
+              return (
+              
               <Link
                 key={item.id}
                 to={item.link}
@@ -36,28 +42,28 @@ const HomeCaseStudies = () => {
 
                   {/* content */}
                   <div className="absolute bottom-0 p-5 text-white flex flex-col gap-3 transition duration-500 ease-out group-hover:-translate-y-2">
-                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <h3 className="text-xl font-semibold">{translated.title}</h3>
 
                     <p className="text-sm text-gray-200">
-                      {item.intro}
+                      {translated.intro}
                     </p>
 
                     <div className="flex gap-2 text-xs">
                       <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
-                        {item.type}
+                        {translated.type}
                       </span>
                       <span className="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm transition duration-500 ease-out group-hover:bg-white/30">
-                        {item.beds}
+                        {translated.beds}
                       </span>
                     </div>
                   </div>
                 </div>
               </Link>
-            ))}
+            )})}
           </div>
         </div>
         <div className="mt-11 pb-4 items-center text-center">
-          <Button title="Explore Projects" link="/case-studies" />
+          <Button title={content.button} link="/case-studies" />
         </div>
       </div>
     </section>

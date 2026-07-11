@@ -1,7 +1,11 @@
 import React from "react";
 import Button from "../ReusableComponents/Button";
+import { useLanguage } from "../../context/LanguageContext";
 
 const CompanyIntro = () => {
+  const { t } = useLanguage();
+  const content = t.companyIntro;
+
   return (
     <section
       id="CompanyIntro"
@@ -9,28 +13,21 @@ const CompanyIntro = () => {
     >
       <div className="max-w-7xl mx-auto py-12 sm:py-20 px-6 lg:px-8">
         <h2 className="text-(--color-text-dark) text-2xl sm:text-4xl lg:text-5xl mb-10">
-          Homes For Sapiens - property investment and consultancy
+          {content.title}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-left text-base sm:text-xl">
           <p className="text-gray-800 leading-relaxed">
-            Founded in 2017 as an investment company and expanding to
-            consultancy in 2022, Homes for Sapiens is a trusted advisor for
-            navigating the UK property market. Whether you’re buying a home or
-            exploring investment opportunities, we provide end-to-end support to
-            simplify the process.
+            {content.paragraphOne}
           </p>
 
           <p className="text-gray-800 leading-relaxed">
-            Our services cover all stages of property acquisition, including
-            property search, financing, AML compliance, and tax guidance. With
-            connections to top brokers, lenders, and legal experts, we ensure
-            favourable terms and a smooth transaction experience.
+             {content.paragraphTwo}
           </p>
         </div>
         <div className="mt-15">
           <Button
-            title="Shedule a Consultation"
+            title={content.button}
             link={'/consultation'} 
           />
         </div>
