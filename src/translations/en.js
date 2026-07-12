@@ -703,7 +703,7 @@ export const en = {
     "paragraphs": [
       "If you are not yet ready for full coaching but want professional direction, a one-hour consultation is the perfect starting point.",
       "This focused session is designed to give you clarity, practical advice and a clear action plan for your next steps in property investment.",
-      "There are no templates here. Every investor’s journey is different. We will take time to understand your goals, financial position, and risk tolerance in order to design a strategy that truly fits your situation. The process is not complicated, but it does require commitment and focus.",
+      "There are no templates here. Every journey is different. We will take time to understand your goals, financial position, and risk tolerance in order to design a strategy that truly fits your situation. The process is not complicated, but it does require commitment and focus.",
       "There are no shortcuts or “magic solutions” — otherwise everyone would already have them. What you will get instead is a clear strategy and practical blueprint, and I am here to guide you through it."
     ]
   },
